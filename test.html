@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Animation</title>
+
+
+<style>
+    /* Pulse Animation */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .pulse {
+        animation: pulse 1s infinite;
+    }
+
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(5px);
+        }
+        75% {
+            transform: translateX(-5px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .shake:hover {
+        animation: shake 0.5s ease;
+    }
+
+
+    /* Spin Animation */
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .spin {
+        animation: spin 2s infinite linear;
+    }
+
+
+
+    
+    /* Arrow animation */
+    .button2::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+        top: 50%;
+        left: 50%;
+        transition: transform 0.3s ease;
+        transform: translate(-50%, -50%) rotate(-90deg); /* Initially hidden */
+    }
+
+    .button2:hover::before {
+        transform: translate(-50%, -50%) rotate(0); /* Show arrow on hover */
+    }
+
+    /* Expand effect */
+    .button2::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        top: 0;
+        left: 0;
+        transition: transform 0.3s ease;
+        transform: scaleX(0); /* Initially hidden */
+        transform-origin: right; /* Expand from the right */
+    }
+
+    .button2:hover::after {
+        transform: scaleX(1); /* Expand effect on hover */
+        transform-origin: left; /* Expand from the left */
+    }
+
+     /* Arrow Left Animation */
+     .arrow-left::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid rgba(255, 255, 255, 0.5);
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .arrow-left:hover::before {
+        opacity: 1;
+    }
+
+     /* Arrow Right Animation */
+     .arrow-right::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid rgba(255, 255, 255, 0.5);
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .arrow-right:hover::before {
+        opacity: 1;
+    }
+
+    /* Arrow Up Animation */
+    .arrow-up::before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .arrow-up:hover::before {
+        opacity: 1;
+    }
+
+</style>
+
+</head>
+<body>
+    <button class="button2 pulse">Apply Now (Pulse)</button>
+<button class="button2 slide-from-left">Apply Now (Slide from Left)</button>
+<button class="button2 fade-in">Apply Now (Fade-in)</button>
+<button class="button2 shake">Apply Now (Shake)</button>
+<button class="button2 spin">Apply Now (Spin)</button>
+<button class="button2 arrow-left">Apply Now (Arrow Left)</button>
+<button class="button2 arrow-right">Apply Now (Arrow Right)</button>
+<button class="button2 arrow-up">Apply Now (Arrow Up)</button>
+
+
+</body>
+</html>
