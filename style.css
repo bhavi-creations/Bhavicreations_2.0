@@ -1,0 +1,80 @@
+.parent-div {
+  width: 205px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.button--1-4704 {
+  position: absolute;
+  width: 205px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+  border-radius: 0px 0px 0px 0px;
+}
+.component-2-1-2666-container {
+  position: absolute;
+  width: 138.0291748046875px;
+  height: 74.95623779296875px;
+  top: 15px;
+  left: 38px;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 0px 0px 0px 0px;
+}
+.property-1butto-1-2112 {
+  position: absolute;
+  width: 138.0291748046875px;
+  height: 74.95623779296875px;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 0px 0px 0px 0px;
+}
+.ellipse-1031-1-1700 {
+  position: absolute;
+  width: 53.93193054199219px;
+  height: 53.93193054199219px;
+  top: 10.05517578125px;
+  left: 8.22686767578125px;
+  opacity: 1;
+  z-index: 1;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  background: #40a2d8ff;
+  box-shadow:
+    0px 3.6564018726348877px 3.6564018726348877px 0px
+      rgba(0, 0, 0, 0.10000000149011612),
+    inset 0px 3.6564018726348877px 3.6564018726348877px 0px
+      rgba(0, 0, 0, 0.10000000149011612);
+}
+.rectangle-6280-1-32 {
+  position: absolute;
+  width: 138.0291748046875px;
+  height: 74.95623779296875px;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 54.84602737426758px 54.84602737426758px 54.84602737426758px
+    54.84602737426758px;
+  box-sizing: border-box;
+  border-left: 16.453807830810547px solid
+    linear-gradient(270deg, #ffffffff 0%, #ffffff00 100%);
+  border-right: 16.453807830810547px solid
+    linear-gradient(270deg, #ffffffff 0%, #ffffff00 100%);
+  border-top: 16.453807830810547px solid
+    linear-gradient(270deg, #ffffffff 0%, #ffffff00 100%);
+  border-bottom: 16.453807830810547px solid
+    linear-gradient(270deg, #ffffffff 0%, #ffffff00 100%);
+}
