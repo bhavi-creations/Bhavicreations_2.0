@@ -258,14 +258,15 @@
   }
   
   .content {
-    padding: 100px 60px 0px 30px;
+    /* padding: 100px 60px 0px 30px; */
     transform: translate3d(0, 0, 26px);
   }
   
   .content .title {
     display: block;
     color: #003789;
-    
+    padding: 20px;
+    padding-top: 40px;
     font-size: 20px;
     margin-top: 50px !important;
     font-weight: bold;
@@ -303,21 +304,8 @@
     transform: translate3d(0, 0, 10px);
   }
   
-  .bottom .view-more .view-more-button {
-    background: none;
-    border: none;
-    color: #00c37b;
-    font-weight: bolder;
-    font-size: 12px;
-  }
   
-  .bottom .view-more .svg {
-    fill: none;
-    stroke: #00c37b;
-    stroke-width: 3px;
-    max-height: 15px;
-  }
-  
+ 
   .bottom .social-buttons-container {
     display: flex;
     gap: 10px;
@@ -387,19 +375,19 @@
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     /* background: rgba(0, 241, 249, 0.2); */
-    background: rgba(0, 255, 255, 0.2);
+    background: rgba(0, 255, 255, 0.09);
     transition: all 0.5s ease-in-out;
   }
   
   .logo .circle1 {
-    width: 170px;
+    width: 100px;
     transform: translate3d(0, 0, 20px);
     top: 8px;
     right: 8px;
   }
   
   .logo .circle2 {
-    width: 140px;
+    width: 90px;
     transform: translate3d(0, 0, 40px);
     top: 10px;
     right: 10px;
@@ -409,7 +397,7 @@
   }
   
   .logo .circle3 {
-    width: 110px;
+    width: 70px;
     transform: translate3d(0, 0, 60px);
     top: 17px;
     right: 17px;
@@ -417,7 +405,7 @@
   }
   
   .logo .circle4 {
-    width: 80px;
+    width: 50px;
     transform: translate3d(0, 0, 80px);
     top: 23px;
     right: 23px;
@@ -425,7 +413,7 @@
   }
   
   .logo .circle5 {
-    width: 50px;
+    width: 30px;
     transform: translate3d(0, 0, 100px);
     top: 30px;
     right: 30px;
@@ -468,4 +456,85 @@
 
 
 
-   
+   /* SOCIAL MEDIA  */
+
+
+
+
+   .icon_card {
+    display: flex;
+    height: 70px;
+    width: 270px;
+  }
+  
+  .icon_card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .icon_card .social-link1,.icon_card .social-link2,.icon_card .social-link3,.icon_card .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+  
+  .icon_card svg {
+    transform: scale(1);
+  }
+  
+  .icon_card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .icon_card .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .icon_card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .icon_card .social-link4:hover {
+    background-color: #0048a6;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }

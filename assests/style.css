@@ -163,15 +163,18 @@ padding-left: 20px !important;
  
  
  
+.card{
+width:180px;
+height: 180px !important;
+}
 
  .cardo{
-   
-     margin-right: 120px !important;   
+      /* margin-right: 80px !important;    */
 }
 
 /* To avoid margin being applied to the last card */
 .cardo:last-child {
-    margin-right: 0 !important; 
+    /* margin-right: 0 !important;  */
 } 
  
 
@@ -999,4 +1002,10 @@ padding-left: 20px !important;
 
 .switch input:checked + .slider:before {
   transform: translateX(1.5em);
+}
+
+
+ 
+.con > div {
+  display: inline-block;
 }
