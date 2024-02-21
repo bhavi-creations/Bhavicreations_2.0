@@ -160,7 +160,9 @@ padding-left: 20px !important;
     border-bottom: none !important;   
 }
 
- 
+.icon_container{
+  margin-top: -80px;
+} 
  
  
 .card{
@@ -168,16 +170,66 @@ width:180px;
 height: 180px !important;
 }
 
- .cardo{
-      /* margin-right: 80px !important;    */
+
+
+@media (min-width:572px) and (max-width:768px) {
+  .card_main_container{
+    margin-top: -50px;
+  }
+
+.moye{
+  display: none;
 }
 
-/* To avoid margin being applied to the last card */
-.cardo:last-child {
-    /* margin-right: 0 !important;  */
-} 
- 
+  .card{
+    margin-top: 8px;
+   
+    width:130px;
+    height: 130px !important;
+    
+    }
+  
+    .content .title {
+      display: block;
+      color: #003789;
+      /* padding: 20px !important;  */
+       /* padding-top: -180px !important; */
+      font-size: 15px !important;
+      margin-top: -1px !important;
+      font-weight: bold;
+    }
 
+    .icon_container{
+      margin-top: -120px;
+    } 
+
+}
+  
+
+@media (min-width:768px) and (max-width:992px) {
+
+  .card{
+    margin-top: 8px;
+   
+    width:160px;
+    height: 160px !important;
+    }
+  
+    .content .title {
+      display: block;
+      color: #003789;
+      padding: 20px !important;
+       padding-top: 30px !important;
+      font-size: 20px;
+      margin-top: 50px !important;
+      font-weight: bold;
+    }
+
+    .icon_container{
+      margin-top: -120px;
+    } 
+
+}
 
 .parent-div {
     width: 205px;
@@ -1009,3 +1061,13 @@ height: 180px !important;
 .con > div {
   display: inline-block;
 }
+
+
+
+
+
+ .address{
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+ }
