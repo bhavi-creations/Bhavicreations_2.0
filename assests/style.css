@@ -170,7 +170,16 @@ width:180px;
 height: 180px !important;
 }
 
+@media (max-width:576px) {
+  .icon_container{
+    margin-top: 40px;
+   
+  } 
 
+  .button_card{
+    margin-top: -50px;
+  }
+}
 
 @media (min-width:572px) and (max-width:768px) {
   .card_main_container{
@@ -202,7 +211,7 @@ height: 180px !important;
     }
 
     .icon_container{
-      margin-top: -120px;
+      margin-top: 20px;
     } 
 
 }
