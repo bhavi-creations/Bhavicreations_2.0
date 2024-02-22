@@ -40,9 +40,9 @@
 
 .whatsapp_logo {
     position: fixed;
-    bottom: 368px;
-    right: 1000px;
-    z-index: 9999; 
+    /* bottom: 368px; */
+    /* right: 1000px; */
+    /* z-index: 9999;  */
 }
 
 .whatsapp_logo img {
@@ -56,9 +56,9 @@
 
   .whatsapp_logo {
     position: fixed;
-    bottom: 300px;
-    right: 450px;
-    z-index: 9999; 
+    /* bottom: 300px; */
+    /* right: 450px; */
+    /* z-index: 9999;  */
 }
 
 }
@@ -68,9 +68,9 @@
 
   .whatsapp_logo {
     position: fixed;
-    bottom: 700px;
-    right: 450px;
-    z-index: 9999; 
+    /* bottom: 700px; */
+    /* right: 450px; */
+    /* z-index: 9999;  */
 }
 
 }
@@ -78,9 +78,9 @@
 @media (max-width:768px) {
   .whatsapp_logo {
     position: fixed;
-    bottom: 380px !important;
-    right: 50px;
-    z-index: 9999; 
+    /* bottom: 380px !important; */
+    /* right: 50px; */
+    /* z-index: 9999;  */
 }
 }
 
