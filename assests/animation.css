@@ -947,3 +947,18 @@ input[type]:checked ~ span.mid {
   color: #ccc;
   padding-top: 5px;
 }
+
+
+
+
+
+/* bouncing text  */
+.animated-text {
+  visibility: hidden; /* Hide the text by default */
+}
+
+.animated-texto {
+  visibility: hidden; /* Hide the text by default */
+}
+
+ 
