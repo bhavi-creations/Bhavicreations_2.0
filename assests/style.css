@@ -19,21 +19,12 @@
     /* background-color:#f8f8f8    */
 }
 
-@media (min-width:1200px) {
-  body {
-  height: 100vh;
-}
-
-}
+ 
  
 
-@media (min-width:992px) and (max-width:1200px) {
-  body {
-  height:600px !important;
-  overflow-x: hidden !important;
-}
+ 
 
-}
+
 /* WhatsApp Logo */
 
 
