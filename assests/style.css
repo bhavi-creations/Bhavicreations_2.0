@@ -21,56 +21,31 @@
 
 
 /* WhatsApp Logo */
+
+
+
 .whatsapp_logo {
     position: fixed;
     bottom: 100px;
-    right: 20px;
-    z-index: 9999; /* Ensure it appears on top of other content */
+    right: 40px;
+    z-index: 9999; 
 }
 
 .whatsapp_logo img {
-    width:50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
+    width:50px;  
+    height: 50px;  
 }
 
-/* Scroll-to-Top Button */
-#scroll-top {
+ 
+
+@media (max-width:768px) {
+  .whatsapp_logo {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color:#4698db; /* Background color */
-    color: #fff; /* Text color */
-    border: none;
-    border-radius: 80%;
-    padding: 10px; /* Adjust padding as needed */
-    font-size: 24px; /* Adjust font size as needed */
-    cursor: pointer;
-    z-index: 9999; /* Ensure it appears on top of other content */
+    bottom: 30px !important;
+    right: 10px;
+    z-index: 9999; 
 }
-
-#scroll-top:hover {
-    background-color: #01539D; /* Hover background color */
 }
-
-
-#scrollBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #033c72e9;
-    color: #ffffff;
-    border: none;
-    border-radius:50%;
-    cursor: pointer;
-    display: none;
-    /* height: 20px; */
-}
-
-
-
-
-
 
 /* header and navbar start */
 
@@ -114,7 +89,7 @@
 
  
 .dropdown-menu {
- /* opacity: 0.1;  */
+ /* opacity: 0.1;  */ 
  background: transparent !important;
  /* border-radius: 20px; */
 
@@ -130,6 +105,16 @@ background-color: rgba(255, 255, 255, 0.5);
 padding-left: 20px !important; 
 -webkit-font-smoothing: antialiased; 
 -moz-osx-font-smoothing: grayscale;  
+
+
+
+
+
+
+
+ top:  15% !important;
+ margin-left: 70% !important
+  
 
 }
 .menu_item{
@@ -635,6 +620,9 @@ height: 180px !important;
  
 
 @media (min-width:1200px) {
+ 
+
+
   .text_div{
   margin-top: 20px !important;
   color: #ffffff;
@@ -674,6 +662,15 @@ height: 180px !important;
 }
 
 @media (min-width:768px) and  (max-width:992px)  {
+
+  .menu_border{
+ 
+    top:  15% !important;
+    margin-left: 62% !important  
+   
+   }
+
+
   .text_div{
   margin-top: 40px !important;
   color: #ffffff ;
@@ -716,8 +713,8 @@ height: 180px !important;
       border: 12px solid #ffffff !important;
       border-radius: 50px;
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      margin-top: -25px !important; 
-      margin-bottom: 40px !important;
+      margin-top: 25px !important; 
+      margin-bottom: -10px !important;
     }
     
     .slider:before {
@@ -743,7 +740,7 @@ height: 180px !important;
     }
   
     .switch { 
-      margin-left: -10px !important;
+      margin-left: -20px !important;
       margin-right: -30px !important;
  
     
@@ -760,6 +757,17 @@ height: 180px !important;
    }
 
 @media (min-width:576px) and  (max-width:768px)  {
+
+  .menu_border{
+ 
+    top:  15% !important;
+    margin-left: 51% !important  
+   
+   }
+
+
+
+
   .text_div{
   margin-top: 30px !important;
   color: #ffffff ;
@@ -788,14 +796,18 @@ height: 180px !important;
   
   .we_support{
     font-size: 24px !important; 
+    
   }
   
   
   .your_business{
     font-size: 24px !important; 
-    margin-top: -34px !important; 
+    margin-top: -14px !important; 
   
   }
+
+
+
    /* growth  */
   
    
@@ -809,8 +821,8 @@ height: 180px !important;
       border: 6px solid #ffffff !important;
       border-radius: 50px;
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      margin-top: -10px !important; 
-      margin-bottom: 23px !important;
+      margin-top: 22px !important; 
+      margin-bottom: -8px !important;
     }
     
     .slider:before {
@@ -872,6 +884,16 @@ height: 180px !important;
 
 
 @media (max-width:576px)  {
+
+
+  .menu_border{
+ 
+    top:  15% !important;
+    margin-left: 32% !important  
+   
+   }
+
+
   .text_div{
   margin-top: 30px !important;
   color: #ffffff ;
@@ -944,8 +966,8 @@ height: 180px !important;
     border: 6px solid #ffffff !important;
     border-radius: 50px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    margin-top: -5px !important; 
-    margin-bottom: 20px !important;
+    margin-top:  20px !important; 
+    margin-bottom: -6px !important;
   }
   
   .slider:before {
@@ -1035,16 +1057,16 @@ height: 180px !important;
   border: 12px solid #ffffff;
   border-radius: 50px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  margin-top: -20px; 
-  margin-bottom: 30px;
+  margin-top:  22px; 
+  margin-bottom: -8px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 1.4em;
-  width: 1.4em;
-  left: -0.1em;
+  height: 1.2em;
+  width: 1.2em;
+  left: 0.0em;
    bottom: -0.25em; 
   background-color: #40a2d8ff;
   border-radius: inherit;
