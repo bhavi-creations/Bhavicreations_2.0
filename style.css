@@ -11,14 +11,20 @@
     /* background-color:#f8f8f8    */
 }
 
+.main_sec_about_con{
+    
+   background-image: linear-gradient(to bottom, rgba(187, 187, 187, 0.104) 0%, #ffffff 100%); 
+}
+
 .heading1 {
     font-family: Poppins;
 font-size: 36px;
-font-weight: 700;
+/* font-weight: 700; */
 line-height: 54px;
 letter-spacing: 0em;
 text-align: left;
 color:black;
+font-weight: bolder ;
 }
 
 .paragraph1 {
@@ -62,47 +68,51 @@ color: #3A3A3A;
 
 }
 
-/* .sec3-button  */
-.custom-btn {
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-      7px 7px 20px 0px rgba(0,0,0,.1),
-      4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-   }
-   
-   .btn-1 {
-    background: rgb(6,14,131);
-    background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
-    border: none;
-   }
-   
-   .btn-1:hover {
-    background: rgb(0,3,255);
-    background: linear-gradient(0deg, rgb(0, 17, 255) 0%, rgba(2,126,251,1) 100%);
-   }
+/* .sec3- button */
+ 
+.sec_3_btn_team {
+  display: inline-block;
+  border-radius: 50px;
+  border: none;
+  background-image: linear-gradient(to bottom, #85c7ee, #0579ee); 
+  color: white;
+  font-family: inherit;
+  text-align: center;
+  font-size: 13px;
+  
+  width: 10em;
+  padding: 1em;
+  transition: all 0.4s;
+  cursor: pointer;
+ }
+ 
+ .sec_3_btn_team span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+ }
+ 
+ .sec_3_btn_team span:after {
+  content: 'Our Team';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right:  -20px;
+  transition: 0.7s;
+ }
+ 
+ .sec_3_btn_team:hover span {
+  padding-right: 5em;
+ }
+ 
+ .sec_3_btn_team:hover span:after {
+  opacity: 4;
+  right: 0;
+ }
 
-   .sec2-heading {
-    font-family: Poppins;
-font-size: 36px;
-font-weight: 700;
-line-height: 54px;
-letter-spacing: 0em;
-text-align: left;
-   color:black;
-}
 
+ 
 .section3 {
     background-color: #FFF1E1;
     padding-top: 100px;
@@ -114,7 +124,15 @@ text-align: left;
 
 
 /* counters section  */
+.counters_color{
+color: #005ea6;
+font-weight: 500;
 
+}
+
+.our_numbers_sec{
+  font-weight: 600;
+}
 .key_fact{
   font-weight: bold;
 }
