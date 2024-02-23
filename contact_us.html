@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Your website description">
+        <meta name="keywords" content="your,keywords,here">
+        <meta name="author" content="Your Name">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <title>Bhavi Creations</title>
+        <link rel="icon" href="assests/images/mini_l ogo.png" type="image/x-icon">
+    
+        <link rel="stylesheet" href="assests/about.css">
+    
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-lYFkg6eZ2q7hnkxZ9pPt2K/CszkQzPLhtlDwe2lnJQmI+iY9GM1f3tmzxoTfwUKl" crossorigin="anonymous">
+     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+     
+        <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    
+    
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <link href="path_to_bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    
+        
+    </head>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+      
+       * {
+       font-family: 'Inter', sans-serif;
+        }
+
+        .contact_form {
+        position: relative!important;
+        margin-top: -9% !important;
+        /* z-index: 1;  */
+       }
+
+       input{
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(248, 242, 242);
+        border-bottom: 1px solid black; 
+        }
+        
+        textarea{
+     
+        }
+
+ 
+
+.map_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Ensure the text is above the map */
+    /* background-color: rgba(255, 255, 255, 0.5);  */
+    padding: 20px;
+    text-align: center;
+    /* color: rgb(255, 0, 64); */
+}
+
+
+
+textarea {
+    width: 100%;  
+    max-width: 100%;  
+    height: auto; 
+    box-sizing: border-box;  
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(248, 242, 242);
+    border-bottom: 1px solid black;  
+}
+
+
+ 
+
+.map_frame {
+    opacity: 0.5;  
+}
+
+ 
+    </style>
+
+  <body>
+
+
+    <!-- MAIN SECTION -->
+        <!-- <div class="container  main_section mt-5">
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.8197404094867!2d82.24807577582071!3d16.98341481431585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3829915d3063a9%3A0x357d06d49d4e389a!2sBhavi%20Creations%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1708681699695!5m2!1sen!2sin" width="1240" height="343" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div> -->
+
+        <div class="container main_section mt-5 pt-5">
+            <div class="row position-relative">
+                <iframe class="map_frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.8197404094867!2d82.24807577582071!3d16.98341481431585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3829915d3063a9%3A0x357d06d49d4e389a!2sBhavi%20Creations%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1708681699695!5m2!1sen!2sin" width="1240" height="343" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map_overlay">
+
+                    <h2>Text on top of the map</h2>
+                    <p>This is some text overlaid on the map.</p>
+                </div>
+            </div>
+        </div>
+        
+    <!--  ENDING MAIN SECTION -->
+
+
+
+    
+
+        <div class="container contact_form  shadow  " style="border-radius: 30px; background-color: rgb(248, 242, 242);" >
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12 pt-5 ps-5" style="background-color: black; border-radius: 30px;">
+                   <h1  class="text-light" >Contact Information</h1>
+                   <p class="text-light">Say Something to start a live chat</p>
+
+
+                   <p class="text-light mt-5 pt-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    
+                  </svg> &nbsp; &nbsp; &nbsp;   +919642343434</p>
+                  <p class="text-light mt-5"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                  </svg>  &nbsp;  &nbsp;  &nbsp; Bhavicreations@gmail.com</p>
+
+                  <p class="text-light mt-5" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>  &nbsp;  &nbsp;  &nbsp;  Bhavi Creations Pvt Ltd <br>
+                         <span class="ms-5">Plot no 28, H No 70, 17-28, RTO Office Rd,</span><br> 
+                         <span class="ms-5">opposite to New, behind J.N.T.U.Engineering <br>   
+                         <span class="ms-5"> College Play Ground,  Ranga Rao Nagar,<br>  </span>
+                         <span class="ms-5"> Kakinada, Andhra Pradesh 533003   </span>    
+                  </p>
+                  
+                  
+                </div>
+                <div class="col-lg-7  col-md-6 col-sm-12 mt-5">
+                    <form action="contact_mail.php" method="post" class="ms-5  mt-5 mb-3">
+                        <div class="row"> 
+                        <div class="col-lg-6">
+                            <label for="name" class="ms-2 ">First Name</label><br>
+                            <input type="text" id="name" name="name"  class="inputname mb-2"> <br>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="number"  class="ms-2" >Last Name</label><br>
+                            <input type="phone" id="phone" name="phone"  class="inputemail mb-2" required><br>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="email"  class="ms-2 mt-5"  >Email</label><br>
+                            <input type="email" id="email" name="email"  class="inputemail mb-2" required><br>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="email"  class="ms-2 mt-5" >Phone Number</label><br>
+                            <input type="email" id="email" name="email"  class="inputemail mb-2" required><br>
+                        </div>
+                    </div>
+                    <h6 class="mt-5"> select Subject</h6>
+                    <div class="row mt-5">
+                        <div class="col-lg-3">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Inquiry</label><br>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Inquiry</label><br>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Inquiry</label><br>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Inquiry</label><br>
+                        </div>
+                     
+                    </div>
+                       
+                  
+                    <!-- <div class="col-12">
+                        <label for="message"  class="ms-2 mt-5" >Message</label><br>
+                        <textarea id="w3review" name="w3review" rows="1" cols="50"></textarea>
+                    </div> -->
+                        <!-- <textarea id="message" name="message" rows="4"    class="inputmessage mb-2" required></textarea><br> -->
+                        <div class="col-12">
+                            <label for="message" class="ms-2 mt-5">Message</label><br>
+                            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                        </div>
+                    <br>
+                    
+                        <div class="ms-5">
+                            <button type="submit" class="btn btn-danger" style="background-color: #ff5733;">submit</button>
+                        </div>
+        
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  </body>
+</html>

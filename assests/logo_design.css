@@ -1,0 +1,39 @@
+.logodesign-para {
+    font-family: Poppins;
+font-size: 25px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: left;
+color:black;
+}
+
+.logo-heading {
+    /* background-color: #2580D5; */
+    border-radius:50%;
+    font-size:32px;
+
+}
+
+.card-heading {
+    font-family: Poppins;
+font-size: 25px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: left;
+color:black;
+}
+
+@media(min-width:567) and (max-width:768) {
+    .mobileview {
+        margin-top:-140px !important;
+    }
+}
+
+@media(min-width:567) and (max-width:768) {
+    .lastsec {
+        padding:0px !important;
+        margin:0px !important;
+    }
+}
