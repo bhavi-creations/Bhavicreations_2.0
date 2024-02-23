@@ -29,20 +29,18 @@
 @media (min-width:768px)  and (max-width:992px)   {
   body {
     height: 112vh !important;
+    overflow-x: hidden;
    }
+
 }
+ 
  
 
 /* WhatsApp Logo */
 
 
 
-.whatsapp_logo {
-    position: fixed;
-    bottom: 30px;
-    right: 40px;
-    /* z-index: 9999;  */
-}
+
 
 .whatsapp_logo img {
     width:  50px;  
@@ -51,16 +49,15 @@
 
  
  
-@media (min-width:768px) and (max-width:992px){
-
+@media (min-width:768px)  {
 
   .whatsapp_logo {
     position: fixed;
-    /* bottom: 700px; */
-    /* right: 450px; */
+    bottom: 30px;
+    right: 40px;
     /* z-index: 9999;  */
 }
-
+ 
 }
 
 @media (max-width:768px) {
@@ -74,10 +71,8 @@
 
 /* header and navbar start */
 
-
-
+  
  
-
 .sec1-para {
     font-family: Poppins;
     /* font-size: 18px; */
@@ -88,22 +83,10 @@
     color: #ffffff;
 }
 
-.sec1-viewmore {
-    font-family: Poppins;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #fefefe;
-    background-blend-mode: screen;
-    background: #085093CC;
-    background: linear-gradient(180deg, #3598F3 0%, #0A58A0 100%);
-    border: 3.66px solid #82add8cc;
-    padding: 10px;
-    border-radius: 25px;
-}
- 
+
+
+
+
 
 
  

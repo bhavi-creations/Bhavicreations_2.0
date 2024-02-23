@@ -675,16 +675,7 @@ input[type]:checked ~ span.mid {
   }
 }
 
-
-@media ( min-width: 768px) and (max-width:998px) {
-  
-
-  .cube_box_main{
- display: none;  }
-
-
-}
-
+ 
 
 
 
@@ -962,3 +953,61 @@ input[type]:checked ~ span.mid {
 }
 
  
+
+/* connect to ceo button  */
+
+.ceo_btn {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+   
+  cursor: pointer;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+}
+
+.ceo_btn:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.ceo_btn::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.ceo_btn:hover::before {
+  width: 250%;
+}
+
+.sec1-viewmore {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fefefe;
+  background-blend-mode: screen;
+  background: #085093CC;
+  background: linear-gradient(180deg, #3598F3 0%, #0A58A0 100%);
+  border: 3.66px solid #82add8cc;
+  padding: 10px;
+  border-radius: 25px;
+}
