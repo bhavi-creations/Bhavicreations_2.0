@@ -129,6 +129,10 @@
 
 
 
+/* plamplate page  */
+
+
+/* 3rd section  */
 
 @media (min-width:1200px) {
 
@@ -143,3 +147,18 @@
        padding-top: 100px !important;
     }
     }
+
+@media (min-width:1200px) {
+.three_img_sec_3{
+    margin-top: 43px;
+}    
+}
+
+
+@media (min-width:1200px) {
+
+
+.last_sec_text_div{
+    margin-top: 200px;
+}    
+}
