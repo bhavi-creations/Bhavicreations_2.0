@@ -11,6 +11,157 @@
     /* background-color:#f8f8f8    */
 }
 
+
+.nav_main{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu {
+  /* opacity: 0.1;  */ 
+  background: transparent !important;
+  /* border-radius: 20px; */
+ 
+ }
+ 
+ .menu_border{
+  border-color: rgb(189, 188, 188) !important;
+  border-width: 2px !important;
+ border-radius: 20px !important;
+ backdrop-filter: blur(8px); /* Adjust the blur intensity as per your preference */
+ background-color: rgba(255, 255, 255, 0.5); 
+   padding-right: 50px !important; 
+ padding-left: 20px !important; 
+ -webkit-font-smoothing: antialiased; 
+ -moz-osx-font-smoothing: grayscale;  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  top:  15% !important;
+  margin-left: 70% !important
+   
+ 
+ }
+ .menu_item{
+     font-weight: bold !important;
+     color: #ffffff !important;
+     line-height:  55px !important ;
+  
+ 
+     
+         -webkit-font-smoothing: antialiased; 
+         -moz-osx-font-smoothing: grayscale;  
+         text-rendering: optimizeLegibility;
+     
+     
+ }
+ 
+ .menu_item:hover{
+   background-color: transparent !important;
+  
+ }
+ 
+ .dropdown-menu .menu_item {
+     border-bottom: 3px dashed #d7d7d751 !important; /* Adjust the color and style of the border as per your preference */
+     width: 180px;
+ 
+ }
+
+
+
+ .menu_item_black{
+  font-weight: bold !important;
+  color: #000000 !important;
+  line-height:  55px !important ;
+
+
+  
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale;  
+      text-rendering: optimizeLegibility;
+  
+  
+}
+
+ .dropdown-menu .menu_item_black {
+  border-bottom: 3px dashed black !important; /* Adjust the color and style of the border as per your preference */
+  width: 180px;
+
+}
+
+
+
+
+
+
+
+
+
+
+ .dropdown-menu   .lol:last-child {
+     border-bottom: none !important;   
+ }
+ 
+
+ @media (min-width:768px) and  (max-width:992px)  {
+
+  .menu_border{
+ 
+    top:  15% !important;
+    margin-left: 62% !important  
+   
+   }
+ 
+  }
+
+
+  
+@media (min-width:576px) and  (max-width:768px)  {
+
+  .menu_border{
+ 
+    top:  15% !important;
+    margin-left: 51% !important  
+   
+   }
+  }
+  
+  
+  @media (max-width:576px)  {
+
+
+      .menu_border{
+     
+        top:  15% !important;
+        margin-left: 32% !important  
+       
+       }
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main_sec_about_con{
     
    background-image: linear-gradient(to bottom, rgba(187, 187, 187, 0.104) 0%, #ffffff 100%); 
