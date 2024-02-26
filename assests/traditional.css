@@ -126,3 +126,20 @@
 .heading_color{
     color: white;
 }
+
+
+
+
+@media (min-width:1200px) {
+
+.second_div{
+   padding-top: 280px !important;
+}
+}
+
+@media (min-width:998px)  and (max-width:1200px){
+
+    .second_div{
+       padding-top: 100px !important;
+    }
+    }
