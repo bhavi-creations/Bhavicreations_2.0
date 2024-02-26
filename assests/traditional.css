@@ -58,6 +58,38 @@
        width: 180px;
    
    }
+
+
+
+   .menu_item_black{
+    font-weight: bold !important;
+    color: #000000 !important;
+    line-height:  55px !important ;
+ 
+
+    
+        -webkit-font-smoothing: antialiased; 
+        -moz-osx-font-smoothing: grayscale;  
+        text-rendering: optimizeLegibility;
+    
+    
+}
+
+   .dropdown-menu .menu_item_black {
+    border-bottom: 3px dashed black !important; /* Adjust the color and style of the border as per your preference */
+    width: 180px;
+
+}
+
+
+
+
+
+
+
+
+
+
    .dropdown-menu   .lol:last-child {
        border-bottom: none !important;   
    }
