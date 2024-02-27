@@ -1,4 +1,23 @@
 /* theater page  */
+.sticky_nav{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+   
+
+}
+
+.sticky_nav_grey{
+    position: sticky;
+    top: 0;
+    background-color: rgb(75, 74, 74);
+    z-index: 1000;
+   
+
+}
+/* Adjust z-index of the scrolling content */
+ 
 
 .nav_main{
     margin-top: 10px;
@@ -24,12 +43,7 @@
    -moz-osx-font-smoothing: grayscale;  
    
    
-   
-   
-   
-   
-   
-    top:  15% !important;
+    top:  75% !important;
     margin-left: 70% !important
      
    
@@ -80,16 +94,7 @@
     width: 180px;
 
 }
-
-
-
-
-
-
-
-
-
-
+ 
    .dropdown-menu   .lol:last-child {
        border-bottom: none !important;   
    }
@@ -99,7 +104,7 @@
 
     .menu_border{
    
-      top:  15% !important;
+      top:  75% !important;
       margin-left: 62% !important  
      
      }
@@ -112,7 +117,7 @@
 
     .menu_border{
    
-      top:  15% !important;
+      top:  75% !important;
       margin-left: 51% !important  
      
      }
@@ -124,7 +129,7 @@
 
         .menu_border{
        
-          top:  15% !important;
+          top:  75% !important;
           margin-left: 32% !important  
          
          }
@@ -152,11 +157,15 @@
 
 
 .text_color{
-    color: rgb(160, 158, 158);
+    color: rgb(108, 106, 106);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 .heading_color{
-    color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
