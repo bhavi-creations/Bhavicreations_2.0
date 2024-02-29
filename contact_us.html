@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Bhavi Creations</title>
-    <link rel="icon" href="assests/images/mini_l ogo.png" type="image/x-icon">
+    <link rel="icon" href="assests/images/bhavi/fav blue logo.png" type="image/x-icon">
 
     <link rel="stylesheet" href="assests/about.css">
     <link rel="stylesheet" href="assests/footer_animations.css">
@@ -56,7 +56,7 @@
 
     .contact_form {
         position: relative !important;
-        margin-top: -9% !important;
+        margin-top: -25% !important;
         /* z-index: 1;  */
     }
 
@@ -84,6 +84,7 @@
         padding: 20px;
         text-align: center;
         /* color: rgb(255, 0, 64); */
+        
     }
 
 
@@ -112,6 +113,20 @@
  
 
 
+    .map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
+}
+
+.map-container .map_frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
 
 
  
@@ -160,39 +175,29 @@
 </section>
         
 
-
-
-
-
-
-
-
-
+ 
 
 
     <div class="container main_section mt-5 pt-5">
         <div class="row position-relative">
 
-            <div class="map-container" id="kakinadaDiv">
-                <iframe class="map_frame"
+            <div class="map-container  " id="kakinadaDiv">
+                <iframe class="map_frame "
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.8197404094867!2d82.24807577582071!3d16.98341481431585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3829915d3063a9%3A0x357d06d49d4e389a!2sBhavi%20Creations%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1708681699695!5m2!1sen!2sin"
-                    width="1240" height="343" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+                     style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" name="KakinadaBranch"></iframe>
             </div>
             <div class="map-container" id="rajahmundryDiv" style="display: none;">
                 <iframe class="map_frame"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d953.8272402779374!2d81.78967776961615!3d17.008508681435266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a375c1ecf8e3%3A0x885002264ca8e28a!2sBhavi%20Creations%20Pvt%20Ltd%20%7C%20Best%20Digital%20Marketing%20Company%20In%20Rajahmundry!5e0!3m2!1sen!2sin!4v1708754197553!5m2!1sen!2sin"
-                    width="1240" height="343" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+                     style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" name="RajahmundryBranch"></iframe>
             </div>
 
             <div class="map_overlay">
                 <div class="row">
-                    <div class="col-6">
-                        <h2>Text on top of the map</h2>
-                        <p>This is some text overlaid on the map.</p>
-                    </div>
-                    <div class="col-6">
+                    
+                    <div class="col-6 ml-auto">
                         <div class="dropdown">
                             <select id="branchSelector">
                                 <option value="kakinadaDiv">Kakinada</option>
@@ -213,7 +218,7 @@
 
 
 
-    <div class="container contact_form  shadow  " style="border-radius: 30px; background-color: rgb(248, 242, 242);">
+    <div class="container contact_form  shadow  " style="border-radius: 30px; background-color: rgb(191, 191, 191);">
         <div class="row">
             <div class="col-lg-5 col-md-6 col-sm-12 pt-5 ps-5" style="background-color: black; border-radius: 30px;">
                 <h1 class="text-light">Contact Information</h1>
@@ -306,8 +311,7 @@
             </div>
         </div>
     </div>
-    </div>
-
+   
 
 
 
