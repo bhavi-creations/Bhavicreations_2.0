@@ -1020,5 +1020,75 @@ input[type]:checked ~ span.mid {
 
 
 
+/* main service page cards  */
 
 
+.service_corner_cards {
+  width: 190px;
+  height: 254px;
+  background: transparent;
+  position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.service_corner_cards {
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  color: #212121;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  transition: all ease .3s;
+}
+
+.service_corner_cards::after,
+.service_corner_cards::before {
+  width: 100px;
+  height: 100px;
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  transition: .5s linear;
+}
+
+.service_corner_cards::after {
+  top: -20px;
+  left: -20px;
+  background-color: rgba(66, 167, 214, 0.244);
+  animation: animFirst 5s linear infinite;
+}
+
+.service_corner_cards::before {
+  background-color: rgba(226, 223, 54, 0.27);
+  top: 70%;
+  left: 70%;
+  animation: animSecond 5s linear infinite;
+  animation-delay: 3s;
+}
+
+.service_corner_cards:hover {
+  box-shadow: 0px 0px 10px rgba(0, 77, 32, 0.432)
+}
+
+.service_corner_cards:hover::after {
+  left: 80px;
+  transform: scale(1.2);
+}
+
+.service_corner_cards:hover::before {
+  left: -10px;
+  transform: scale(1.2);
+}

@@ -316,7 +316,7 @@
               <a href="mailto:admin@bhavicreations.com" style="text-decoration: none;" >
               <div class="d-flex">  
               <span class="tooltip-container">
-                  <span class="tooltip" style="color: #000;">Click on</span>
+                  <!-- <span class="tooltip" style="color: #000;">Click on</span> -->
                   <span class="text">@</span>
                    </span> &nbsp;
                   
@@ -391,6 +391,52 @@
   
 </footer>
 <!-- ENDING  FOOTER -->
+
+
+
+
+
+
+<button id="scrollBtn" onclick="scrollToTop()"> <div class="pyramid-loader">
+  <div class="wrapper ">
+    <span class="side side1"></span>
+    <span class="side side2"></span>
+    <span class="side side3"></span>
+    <span class="side side4"></span>
+    <span class="shadow"></span>
+  </div>  
+</div>
+</button>
+
+   
+<script>
+
+
+
+
+  // Function to scroll to the top of the page
+  function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Optional, smooth scrolling animation
+        });
+    }
+
+    // Show scroll button when scrolling down
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollBtn").style.display = "block";
+        } else {
+            document.getElementById("scrollBtn").style.display = "none";
+        }
+    }
+
+
+
+</script>
+
 
 
 

@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    /* background-color:#f8f8f8    */
+}
+
+/* header and navbar start */
+
+
+
+.thicker-icon {
+    text-shadow: 0 0 2px #1F803E;
+    /* Adjust the shadow size as needed */
+}
+
+.white-icon {
+    color: #1F803E;
+    font-weight: bolder;
+
+}
+
+
+@media (min-width:1200px) {
+    .nav-item {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .nav-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* header and navbar end */
+
+
+
+/* mini cards section start */
+
+@media (min-width:768px) {
+
+
+    .mini_card {
+        margin-top: -50px;
+
+
+    }
+
+    .mini_card_in {
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:768px) {
+
+
+    .mini_card_in {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* mini cards section end */
+
+
+
+/* section1 in home page */
+
+.sec1-heading {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1F803E;
+
+}
+
+.sec1-para {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #555555;
+}
+
+.sec1-viewmore {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1F803E;
+}
+
+.sec1-icon {
+    width: 6.13px;
+    height: 12.25px;
+    top: 4.38px;
+    left: 10.5px;
+    border: 1.75px;
+    color: #1F803E;
+
+}
+
+
+/* end section1 in home page */
+
+
+/* section 2 start  */
+
+
+.tata_img_container {
+    background-image: url('images/acadimics.png');
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh;  */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: #fff;  */
+}
+
+@media (min-width:576px) {
+
+    .tata_img_container {
+        padding-right: 200px;
+    }
+
+    .tata {
+        clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: relative;
+        background-color: #ffffff;
+        border-bottom-right-radius: 100px;
+
+    }
+}
+
+.tata {
+    clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    background-color: #ffffff;
+    border-bottom-right-radius: 100px;
+
+}
+
+/* section 2 end  */
+
+/* start section3 in home page */
+.button {
+    width: 271px;
+    height: 60px;
+
+    border-radius: 52px;
+    border-width: 0px;
+    border-color: white;
+
+    background-color: white;
+    padding: 10px;
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-align: center;
+    color: #1F803E;
+    /* margin-top:-30px; */
+    /* margin-left:35px */
+}
+
+
+
+.sec3-heading {
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F803E;
+
+}
+
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .slider4_card {
+        margin-top: -20%;
+    }
+
+}
+
+
+
+/* section3 ends in home page */
+
+
+
+
+
+/* starts section 4 in home page */
+.sec4-heading {
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1F803E;
+}
+
+.secng-heading {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1F803E;
+}
+
+
+.sec4-para {
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #555555;
+}
+
+.button2 {
+    width: 120px;
+    height: 40px;
+    top: 4145px;
+    left: 816px;
+    padding: 11.22px, 24.74px, 11.22px, 24.74px;
+    border-radius: 28.81px;
+    gap: 16.13px;
+    background-color: #1F803E;
+    color: white;
+    border-width: 0px;
+
+}
+
+/* section4 ends in home page */
+
+
+/* map container start */
+
+.map_con {
+    /* background-image: url('images/map_org.png ') ; */
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+@media (min-width:1200px) {
+
+
+
+    .map_con {
+        margin-left: 180px !important;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+
+
+
+    .map_con {
+        margin-left: 90px !important;
+    }
+}
+
+/* map container end */
+
+
+/* buttons animations trails */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake:hover {
+    animation: shake 0.5s ease;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    /* animation: pulse 1s 3; */
+    animation: pulse 1s infinite;
+}
+
+
+/* image animations */
+
+
+
+
+/* Contact Form */
+.contact_form{
+    background-color:  #f8f8f8;
+    border-radius: 30px;
+}
+
+.inputname{
+    width: 85%;
+    border-radius: 10px;
+    border: none;
+}
+
+.inputemail{
+    width: 85%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.inputmessage{
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Ending Contact Form */
+
+/* GALLERY PAGE  */
+ 
+/* Styling Particular Image */
+
+.gallery-img {
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.gallery-img:hover {
+	transform: scale(1.1);
+	cursor: zoom-in;
+}
+ 
+
+@media  (min-width: 435px) and (max-width: 464px) {
+    .gallery {
+      /* margin-left: 60px; */
+      margin-left: 1px !important;
+    }
+  }
+  
+  
+@media  (min-width: 464px) and (max-width: 490px) {
+    .gallery {
+      /* margin-left: 60px; */
+      margin-left: 10px !important;
+    }
+  }
+
+    
+@media  (min-width: 490px) and (max-width: 516px) {
+    .gallery {
+      /* margin-left: 60px; */
+      margin-left: 20px !important;
+    }
+  }
+
+  @media  (min-width: 490px) and (max-width: 516px) {
+    .gallery {
+      /* margin-left: 60px; */
+      margin-left: 20px !important;
+    }
+  }
+
+
+  @media  (min-width: 516px) and (max-width: 575px) {
+    .gallery {
+      /* margin-left: 60px; */
+      margin-left: 40px !important;
+    }
+  }
+/* ENDING  GALLERY PAGE  */
+
+/* about page  */
+
+
+.teacher_card_border{
+    border: none !important;
+}
+
+.teacer_card_scroll{
+    border-top-right-radius: 30px;
+     border-bottom-left-radius:30px;
+
+}
+
+.Sahasara_aim_totalsection{
+    background-color: rgb(248, 248, 248);
+}
+
+
+
+/* testimonials */
+ 
+.testimonial-card {
+    border-radius: 8px !important; /* Adding rounded corners for cards */
+    border: none;
+}
+
+.profile_pic{
+    border-radius: 50%  ;
+}
+ 
+.hr-dark-bold {
+    border-top: 2px solid #000;
+    font-weight: bold;
+     
+}
+
+/* adminssion-card */
+
+
+.con1{
+   
+ 
+    border-radius: 35px;
+    background-color:#007574;
+    }
+    
+    @media (min-width:1200px) {
+        .admin_ssion_card{
+            margin-top: -650px !important;
+           
+        }
+
+        .lala{
+            margin-top: 120px !important;
+        }
+    }
+    
+    @media (min-width:992px) and (max-width:1200px) {
+        
+    
+        .admin_ssion_card{
+            margin-top: -800px !important;
+        }
+         
+        .lala{
+            margin-top: 120px !important;
+        }
+
+
+        }
+    
+    
+     @media (min-width:768px) and (max-width:992px){
+        
+    
+    .admin_ssion_card{
+        margin-top: -1000px !important;
+    }
+    .lala{
+        margin-top: 120px !important;
+    }
+
+    }
+    
+    @media (max-width:768px) {
+        .admin_ssion_card{
+            margin-top: 50px !important;
+        }
+    }
+    
+    
+    .conthead {
+        font-family: Inter;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;
+    }
+    .contpara {
+        font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;
+    }
+
+
+.junior_college_courses_cricle {
+    position: absolute;
+    z-index: 1; /* Set z-index to 1 */
+    margin-top: -15%;
+    margin-left: 5%;
+}
+.home-head {
+ 
+font-size: 36px;
+font-weight: 700;
+line-height: 43px;
+letter-spacing: 0em;
+text-align: left;
+color:#007574;
+
+}
+
+.junior_college_courses{
+    margin-left: 3%;
+    position: relative;
+    background-color: #fff;
+    height: auto;
+    width: 45%;
+    margin-top: -5%;
+    border-radius: 10px;
+}
+
+.junior_college_courses{
+    margin-left: 3%;
+    position: relative;
+    background-color: #fff;
+    height: auto;
+    width: 45%;
+    margin-top: -5%;
+    border-radius: 10px;
+}
+
+/* admission page css */
+.name_form{
+    border-radius: 12px;
+    background: #F2F2F2;
+    width: 100%;
+    height: 45px;
+    flex-shrink: 0;
+    border: transparent;
+    padding-left: 20px;
+    margin:10px;
+
+    }
+  
+    
+      .Send_Message_btn{
+          text-align: center;
+          justify-content: center;
+          border-radius: 25px;
+          background: #026666;
+          color: #FFF;
+          
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          width: 125px;
+          height: 42px;
+  
+          margin-top: 26px;
+          margin-bottom: -60px !important;
+  
+          }
+.last-sec{
+    margin-bottom :40px
+}
+
+ @media (min-width:768px) and (max-width:992px){
+    .last-sec {
+        margin-bottom:-130px
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1600px){
+    .last-sec {
+        margin-bottom:-130px
+    }
+}
+
+
+    .third {
+        width: 300px; /* Adjust as needed */
+        height: 200px; /* Adjust as needed */
+        overflow: hidden; /* This is important to contain the shadow */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Change the values as needed */
+      }
+      
+      .third {
+        width: 100%; /* Make the image fill the container */
+        height: 200px; /* Maintain aspect ratio */
+      }
+
+.card-button {
+    border-width:0px;
+    border-radius:10px;
+    width:80%;
+    padding:5px;
+    background: linear-gradient(to bottom, #98FB98, #006400); 
+    color:white;
+
+}
+
+
+/* WhatsApp Logo */
+.whatsapp_logo {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 9999; /* Ensure it appears on top of other content */
+}
+
+.whatsapp_logo img {
+    width:50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+}
+
+/* Scroll-to-Top Button */
+#scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#4698db; /* Background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 80%;
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 24px; /* Adjust font size as needed */
+    cursor: pointer;
+    z-index: 9999; /* Ensure it appears on top of other content */
+}
+
+#scroll-top:hover {
+    background-color: #01539D; /* Hover background color */
+}
+
+
+#scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #1f803ece;
+    color: #FFF88D;
+    border: none;
+    border-radius:50%;
+    cursor: pointer;
+    display: none;
+    /* height: 20px; */
+}
+
+/* about page */
+.sec1-img1 {
+    /* margin-bottom:100px; */
+    margin-top:-50px;
+}
+.sec1-img2 {
+    margin-top:-450px;
+    margin-left:30px;
+}
+/* .sec1-content {
+    margin-left:-90px;
+    margin-top:20px;
+} */
+
+@media(min-width:576) and (max-width:767) {
+    
+}
+
+@media (min-width:768px) and (max-width:992px){
+   
+}
+
+
+@media (min-width:992px) and (max-width:1600px){
+    .sec1-content {
+        margin-left:-90px;
+        margin-top:20px;
+    }
+}
+
+/* for sec2  */
+/* @media(min-width:576) and (max-width:767) {
+    .sec2-heading {
+        margin-top:90px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+   
+} */
+
+.sec2-img1 {
+    height:300px;
+    width:400px;
+    background-color:antiquewhite;
+    border-radius:30%;
+}
+.sec2-img2 {
+    height:300px;
+    width:600px;
+    margin-top:100px;
+     background-color:rgb(215, 246, 250);
+     border-radius:30%;
+}
+.sec2-img3 {
+    height:300px;
+    width:600px;
+    margin-top:100px;
+    background-color:rgb(243, 215, 250);
+    border-radius:30%;
+}
+.sec2-img4 {
+    height:300px;
+    width:400px;
+    background-color:rgb(229, 250, 215);
+    border-radius:30%;
+}
+
+@media (min-width:992px) and (max-width:1600px){
+    .sec1-content {
+        margin-left:-90px;
+        margin-top:20px;
+    }
+}
+
+.v_line {
+    border-left: 5px solid rgb(2, 99, 135);
+    height: 50px;
+    margin: 0 auto;
+    width:0px;
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    .sec2-1 {
+        margin-left:190px;
+    }
+}
+@media(min-width:768px) and (max-width:992px) {
+    .sec2-3 {
+        margin-left:190px;
+    }
+}
+@media(min-width:768px) and (max-width:992px) {
+    .sec3-2 {
+        margin-top:100px;
+    }
+}   
+
+
+
+.campus{
+    position: relative;
+    margin-top: -10px;
+    margin-left: 20%;
+}
+
+@media(min-width:400px) and (max-width:482px) {
+    .campus1 {     
+        margin-left: 4% !important;
+    }
+}
+@media(min-width:482px) and (max-width:518px) {
+    .campus1 {
+        margin-left: 10% !important;
+    }
+}
+@media(min-width:518px) and (max-width:575px) {
+    .campus1  {
+        margin-left: 12% !important;
+    }
+}   
+
+
+.campus{
+    position: relative;
+    margin-top: -8%;
+    margin-left: 17%;
+    font-size: 20px;
+    font-weight: 600
+}
+
+.campus button{
+    
+    font-size: 20px;
+    font-weight: 600
+}
+
+ 
+.campus1 img {
+    border-radius: 15px;
+}
+
+
+@media(min-width:400px) and (max-width:482px) {
+    .campus1 {     
+        margin-left: 4% !important;
+    }
+}
+@media(min-width:482px) and (max-width:518px) {
+    .campus1 {
+        margin-left: 10% !important;
+    }
+}
+@media(min-width:518px) and (max-width:575px) {
+    .campus1  {
+        margin-left: 12% !important;
+    }
+}  
+@media(min-width:576px) and (max-width:768px) {
+    .campus1  {
+        margin-left: 11% !important;
+    }
+} 
+@media(min-width:768px) and (max-width:992px) {
+    .campus {
+        margin-left: 2% !important;
+    }
+}
+
+
+@media (min-width:375px) and (max-width:443px) {
+    .card_college{
+        height: 500px !important;
+    }
+    
+}

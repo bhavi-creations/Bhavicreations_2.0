@@ -378,8 +378,8 @@
 
 <body>
 
-
-    <section   class="sticky_nav    shadow-lg"> 
+<!-- Navbar -->
+<section   class="sticky_nav    shadow-lg"> 
         <div class="container nav_main">
             <div class="d-flex justify-content-between align-items-center">
                 
@@ -406,7 +406,7 @@
                   <ul class="dropdown-menu dropdown-menu-end menu_border">
                     <li><a class="dropdown-item menu_item_black" href="index.html">Home</a></li>
                     <li><a class="dropdown-item menu_item_black" href="about.html">About</a></li>
-                    <li><a class="dropdown-item menu_item_black" href="#">Services</a></li>
+                    <li><a class="dropdown-item menu_item_black" href="services.html">Services</a></li>
                     <li><a class="dropdown-item menu_item_black  " href="Portfolio.html">Portfolio</a></li>
                     <li><a class="dropdown-item menu_item_black lol" href="contact_us.html">Contact Us</a></li>
                   </ul>
@@ -414,7 +414,7 @@
      
             </div>
         </div>
-        </section>
+</section>
 
 
 <!-- about us main section  -->
@@ -2224,7 +2224,7 @@
                 <a href="mailto:admin@bhavicreations.com" style="text-decoration: none;" >
                 <div class="d-flex">  
                 <span class="tooltip-container">
-                    <span class="tooltip" style="color: #000;">Click on</span>
+                    <!-- <span class="tooltip" style="color: #000;">Click on</span> -->
                     <span class="text">@</span>
                      </span> &nbsp;
                     
@@ -2250,7 +2250,7 @@
 
             </div>
             <div class=" col-4 col-md-4 col-sm-5 col-xs-6 col-lg-3 col-xl-3 ">
-                <h3 class="paragraph1 mt-5 footer-heading" style="color: #92989F;font-weight:bold;font-size:18px;  ">Services</h3>
+                <h3 class="paragraph1 mt-5 footer-heading" style="color: #92989F;font-weight:bold;font-size:18px;  ">Services</h3>  
                 <a href="online_branding_mainpage.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Online</p></a>
                 <a href="main_offline_markiting.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Offline</p></a>
                 <a href="traditional_marketing.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Traditional Marketing</p></a>
@@ -2303,6 +2303,45 @@
 
 
 
+  <button id="scrollBtn" onclick="scrollToTop()"> <div class="pyramid-loader">
+    <div class="wrapper ">
+      <span class="side side1"></span>
+      <span class="side side2"></span>
+      <span class="side side3"></span>
+      <span class="side side4"></span>
+      <span class="shadow"></span>
+    </div>  
+  </div>
+</button>
+
+     
+  <script>
+
+
+
+
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth' // Optional, smooth scrolling animation
+          });
+      }
+  
+      // Show scroll button when scrolling down
+      window.onscroll = function() {scrollFunction()};
+  
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("scrollBtn").style.display = "block";
+          } else {
+              document.getElementById("scrollBtn").style.display = "none";
+          }
+      }
+
+
+
+  </script>
 
 
 

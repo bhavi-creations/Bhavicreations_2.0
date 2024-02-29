@@ -1,5 +1,249 @@
+  
+   
+
+
+
+  
+    /* 
+ .flex_card_btn insperation by @ke1221
+Menu icon transofmation insperation by @Ali-Tahmazi99
+*/
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  color: #090909;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.menuButton:hover {
+  border: 1px solid white;
+}
+
+.menuButton:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+input[type = "checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.menuButton span {
+  width: 30px;
+  height: 4px;
+  background: #131313;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+input[type]:checked ~ span.top {
+  transform: translateY(290%)rotate(45deg);
+  width: 40px;
+}
+
+input[type]:checked ~ span.bot {
+  transform: translateY(-270%) rotate(-45deg);
+  width: 40px;
+  box-shadow: 0 0 10px #495057;
+}
+
+input[type]:checked ~ span.mid {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sticky_nav{
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
  
-    .tooltip-container {
+
+}
+
+.sticky_nav_grey{
+  position: sticky;
+  top: 0;
+  background-color: rgb(75, 74, 74);
+  z-index: 1000;
+ 
+
+}
+/* Adjust z-index of the scrolling content */
+
+
+.nav_main{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu {
+  /* opacity: 0.1;  */ 
+  background: transparent !important;
+  /* border-radius: 20px; */
+ 
+ }
+ 
+ .menu_border{
+  border-color: rgb(189, 188, 188) !important;
+  border-width: 2px !important;
+ border-radius: 20px !important;
+ backdrop-filter: blur(8px); /* Adjust the blur intensity as per your preference */
+ background-color: rgba(255, 255, 255, 0.5); 
+   padding-right: 50px !important; 
+ padding-left: 20px !important; 
+ -webkit-font-smoothing: antialiased; 
+ -moz-osx-font-smoothing: grayscale;  
+ 
+ 
+  top:  75% !important;
+  margin-left: 70% !important
+   
+ 
+ }
+ .menu_item{
+     font-weight: bold !important;
+     color: #ffffff !important;
+     line-height:  55px !important ;
+  
+ 
+     
+         -webkit-font-smoothing: antialiased; 
+         -moz-osx-font-smoothing: grayscale;  
+         text-rendering: optimizeLegibility;
+     
+     
+ }
+ 
+ .menu_item:hover{
+   background-color: transparent !important;
+  
+ }
+ 
+ .dropdown-menu .menu_item {
+     border-bottom: 3px dashed #d7d7d751 !important; /* Adjust the color and style of the border as per your preference */
+     width: 180px;
+ 
+ }
+
+
+
+ .menu_item_black{
+  font-weight: bold !important;
+  color: #000000 !important;
+  line-height:  55px !important ;
+
+
+  
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale;  
+      text-rendering: optimizeLegibility;
+  
+  
+}
+
+ .dropdown-menu .menu_item_black {
+  border-bottom: 3px dashed black !important; /* Adjust the color and style of the border as per your preference */
+  width: 180px;
+
+}
+
+ .dropdown-menu   .lol:last-child {
+     border-bottom: none !important;   
+ }
+ 
+
+ @media (min-width:768px) and  (max-width:992px)  {
+
+  .menu_border{
+ 
+    top:  75% !important;
+    margin-left: 62% !important  
+   
+   }
+ 
+  }
+
+
+  
+@media (min-width:576px) and  (max-width:768px)  {
+
+  .menu_border{
+ 
+    top:  75% !important;
+    margin-left: 51% !important  
+   
+   }
+  }
+  
+  
+  @media (max-width:576px)  {
+
+
+      .menu_border{
+     
+        top:  75% !important;
+        margin-left: 32% !important  
+       
+       }
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer animations  */
+  .tooltip-container {
   height: 30px;
   width: 50px;
   border-radius: 5px;
@@ -94,7 +338,7 @@
 .tooltip-container:hover::before {
   transform: rotateY(0);
   background-image: none;
-  background-color: white;
+  background-color: rgba(2, 26, 55, 0.304);
 }
 
 .tooltip-container:hover .tooltip {
@@ -104,3 +348,111 @@
 }
 
  
+
+
+
+
+
+
+
+
+/* Scroll-to-Top Button */
+ 
+
+
+#scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* padding: 10px 20px; */
+   background-color:transparent;  
+  color: #FFF88D;
+  border: none;
+  /* border-radius:50%;  */
+  cursor: pointer;
+  display: none;
+  /* height: 20px; */
+}
+
+
+
+
+
+
+
+
+
+/* scroll up button  */
+
+
+.pyramid-loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: block;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg);
+}
+
+.wrapper  {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.pyramid-loader .wrapper .side {
+  width: 40px;
+  height: 40px;
+/* you can choose any gradient or color you want */
+  /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: center top;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-loader .wrapper .side1 {
+  transform: rotateZ(-30deg) rotateY(90deg);
+  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .side2 {
+  transform: rotateZ(30deg) rotateY(90deg);
+  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side3 {
+  transform: rotateX(30deg);
+  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side4 {
+  transform: rotateX(-30deg);
+  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .shadow {
+  width: 20px;
+  height: 20px;
+  background: #8B5AD5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateX(90deg) translateZ(-40px);
+  filter: blur(12px);
+}
