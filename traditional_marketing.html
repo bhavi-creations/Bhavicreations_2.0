@@ -1,86 +1,194 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Your website description">
-        <meta name="keywords" content="your,keywords,here">
-        <meta name="author" content="Your Name">
-    
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-        <title>Traditional Bhavi Creations</title>
-        <link rel="icon" href="assests/images/bhavi/fav blue logo.png" type="image/x-icon">
-    
-        <link rel="stylesheet" href="assests/traditional.css">
-        <link rel="stylesheet" href="assests/traditional_animation.css">
-        <link rel="stylesheet" href="assests/footer_animations.css">
 
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-lYFkg6eZ2q7hnkxZ9pPt2K/CszkQzPLhtlDwe2lnJQmI+iY9GM1f3tmzxoTfwUKl" crossorigin="anonymous">
-     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
-     
-         <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
-         <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
-         <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-    
-    
-    
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-        <link href="path_to_bootstrap/bootstrap.min.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description">
+    <meta name="keywords" content="your,keywords,here">
+    <meta name="author" content="Your Name">
 
-    
-        
-    </head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <body  style="background-color: rgb(255, 255, 255);" >
-    
- 
+    <title>Traditional Bhavi Creations</title>
+    <link rel="icon" href="assests/images/mini_l ogo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assests/traditional.css">
+    <link rel="stylesheet" href="assests/traditional_animation.css">
+    <link rel="stylesheet" href="assests/footer_animations.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-lYFkg6eZ2q7hnkxZ9pPt2K/CszkQzPLhtlDwe2lnJQmI+iY9GM1f3tmzxoTfwUKl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="path_to_bootstrap/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        .contact_button {
+            padding: 12.5px 30px;
+            border: 0;
+            border-radius: 100px;
+            background-color: #2ba8fb;
+            color: #ffffff;
+            font-weight: Bold;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+        }
+
+        .contact_button:hover {
+            background-color: #6fc5ff;
+            box-shadow: 0 0 20px #6fc5ff50;
+            transform: scale(1.1);
+        }
+
+        .contact_button:active {
+            background-color: #3d94cf;
+            transition: all 0.25s;
+            -webkit-transition: all 0.25s;
+            box-shadow: none;
+            transform: scale(0.98);
+        }
+
+        .cta {
+            position: relative;
+            margin: auto;
+            padding: 12px 18px;
+            transition: all 0.2s ease;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .cta:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            border-radius: 50px;
+            background: #b1dae7;
+            width: 45px;
+            height: 45px;
+            transition: all 0.3s ease;
+        }
+
+        .cta span {
+            position: relative;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: #234567;
+        }
+
+        .cta svg {
+            position: relative;
+            top: 0;
+            margin-left: 10px;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: #234567;
+            stroke-width: 2;
+            transform: translateX(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .cta:hover:before {
+            width: 100%;
+            background: #b1dae7;
+        }
+
+        .cta:hover svg {
+            transform: translateX(0);
+        }
+
+        .cta:active {
+            transform: scale(0.95);
+        }
+
+       @media (max-width:768px){
+        .imgage_for_sm{
+
+            height: 150px;
+            width: 150px;
+           /* align-items: center; */
+
+        }
+       }
+
+       @media (min-width:768px){
+        .imgage_for_sm{
+            padding-top: 40px;
+        }
+       }
+
+    </style>
+
+
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+
+
     <!-- Navbar -->
-<section   class="sticky_nav    shadow-lg"> 
-    <div class="container nav_main">
-        <div class="d-flex justify-content-between align-items-center">
-            
-        <a href="index.html"> <img src="assests/images/bhavi/blue logo.png"  class="img-fluid   d-none d-md-block"  style="width: 250px;height: 120px;" alt=""></a>   
-            
 
-            <!-- <span  class="address  d-none d-md-block animated-text animate__animated animate__bounceInDown"> <i class="bi bi-geo-alt-fill"></i>  Kakinada</span>
-            <span  class="address  d-none d-md-block  animated-texto animate__animated animate__bounceInDown"><i class="bi bi-geo-alt-fill"></i>    Rajahmundry</span> -->
+    <section class="sticky_nav    shadow-lg">
+        <div class="container nav_main">
+            <div class="d-flex justify-content-between align-items-center">
 
-          <a href="index.html">  <img src="assests/images/bhavi/blue logo.png"  class="img-fluid  d-block d-md-none" style="width: 200px;height: 100px;" alt=""></a>
+                <a href="index.html"> <img src="assests/images/bhavi/blue logo.png"
+                        class="img-fluid   d-none d-md-block" style="width: 250px;height: 120px;" alt=""></a>
 
-           
 
-            <label for="check1" class="menuButton text-center onlyfortab" >
-                <input id="check1" type="checkbox" class="toggleDropdown">
-                <span class="top"></span>
-                <span class="mid"></span>
-                <span class="bot"></span>
-              </label>
-  
-   
-       
-  
-              <ul class="dropdown-menu dropdown-menu-end menu_border">
-                <li><a class="dropdown-item menu_item_black" href="index.html">Home</a></li>
-                <li><a class="dropdown-item menu_item_black" href="about.html">About</a></li>
-                <li><a class="dropdown-item menu_item_black" href="services.html">Services</a></li>
-                <li><a class="dropdown-item menu_item_black  " href="Portfolio.html">Portfolio</a></li>
-                <li><a class="dropdown-item menu_item_black lol" href="contact_us.html">Contact Us</a></li>
-              </ul>
-  
- 
+                <!-- <span  class="address  d-none d-md-block animated-text animate__animated animate__bounceInDown"> <i class="bi bi-geo-alt-fill"></i>  Kakinada</span>
+                <span  class="address  d-none d-md-block  animated-texto animate__animated animate__bounceInDown"><i class="bi bi-geo-alt-fill"></i>    Rajahmundry</span> -->
+
+                <a href="index.html"> <img src="assests/images/bhavi/blue logo.png" class="img-fluid  d-block d-md-none"
+                        style="width: 200px;height: 100px;" alt=""></a>
+
+
+
+                <label for="check1" class="menuButton text-center onlyfortab">
+                    <input id="check1" type="checkbox" class="toggleDropdown">
+                    <span class="top"></span>
+                    <span class="mid"></span>
+                    <span class="bot"></span>
+                </label>
+
+
+
+
+                <ul class="dropdown-menu dropdown-menu-end menu_border">
+                    <li><a class="dropdown-item menu_item_black" href="index.html">Home</a></li>
+                    <li><a class="dropdown-item menu_item_black" href="about.html">About</a></li>
+                    <li><a class="dropdown-item menu_item_black" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item menu_item_black  " href="Portfolio.html">Portfolio</a></li>
+                    <li><a class="dropdown-item menu_item_black lol" href="contact_us.html">Contact Us</a></li>
+                </ul>
+
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
 
 
 
@@ -94,390 +202,467 @@
             <div class="row">
                 <div class="col-6">
                     <h1 style="font-weight: bold; ">Explore Our Service and Solutions</h1>
-                </div> 
+                </div>
                 <div class="col-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia velit libero dolor at explicabo obcaecati distinctio possimus dicta nesciunt necessitatibus vitae enim? Iusto ex, voluptatem deserunt reprehenderit provident optio?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia velit libero dolor at
+                        explicabo obcaecati distinctio possimus dicta nesciunt necessitatibus vitae enim? Iusto ex,
+                        voluptatem deserunt reprehenderit provident optio?</p>
                 </div>
             </div>
         </div>
     </section>
 
- 
-    
- 
- <section>
-	<div class="container my-5">
-		<div class="row row-cols-1 row-cols-md-2 
-					row-cols-lg-3 g-4">
-			<div class="col">
-                <a href="traditional_pamphlets.html" style="text-decoration: none; color: black;">
-                    <div class="card mb-3 shadow" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6 text-center">
-                                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-                                    class="img-fluid rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Pamphlet designing
-                                    </h5>
-                                    <p class="card-text">
-                                        A data structure is a storage that is used to store and organize data. 
-                                    </p>
-                                    
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-			</div>
-			<div class="col">
-                <a href="hoarding.html" style="text-decoration: none; color: black;">
-
-                    <div class="card mb-3 shadow" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6 text-center">
-                                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-                                    class="img-fluid rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hoarding designs</h5>
-                                    <p class="card-text">
-                                        Therefore Algorithm refers to a sequence of finite steps to solve a particular problem. 
-                                    </p>
-                                        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-			</div>
-			<div class="col">
-                <a href="theatre_ads.html" style="text-decoration: none; color: black;">
-
-                    <div class="card mb-3 shadow" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6 text-center">
-                                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-                                    class="img-fluid rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">Theater ads</h5>
-                                    <p class="card-text">
-                                        C++ is a general-purpose programming language 
-                                        and is widely used nowadays for competitive programming.
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-			</div>
-			<div class="col">
-                <a href="traditional_flex.html" style="text-decoration: none; color: black;">
-                    <div class="card mb-3 shadow" style="max-width:540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6 text-center">
-                                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-                                    class="img-fluid rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">Flex Designs</h5>
-                                    <p class="card-text">
-                                        Java is one of the most popular and widely 
-                                        used programming languages. 
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-			</div>
-			<div class="col">
-                <a href="no_parking_ads.html" style="text-decoration: none; color: black;">
-                    <div class="card mb-3 shadow" style="max-width:540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6 text-center">
-                            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-                                class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">No Parking Boards</h5>
-                                    <p class="card-text">
-                                        Python is a high-level, general-purpose 
-                                        and a very popular programming language.</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-			</div>
-		</div>
-	</div> 
- 
-
-  </section>
- 
-<section style="background-color: rgba(128, 128, 128, 0.382);">
- <div class="container  ">
-    <div class="row ">
-        <div class="    col-md-6 my-5">
-            <img src="assests/images/bhavi/pamplets main img.png" style="width: 400px; height: 500px; border-radius: 10px;" class="img-fluid" alt="">
-        </div>
-        <div class="  col-md-6 my-5">
-            <h1>We are Avaliable For 24/7 Emergency Service</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, tempora amet, dicta cumque quidem cum dolorem rem repudiandae sunt accusamus, nemo nesciunt quia similique quam dignissimos explicabo. Voluptatum, rem nam?</p>
-
-            <div class="p-5 mb-5" style="background-color: white; border-radius: 10px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, nam mollitia tempore, neque ratione, amet unde harum in possimus vitae deserunt maiores impedit ad veniam excepturi eos. Dolore, quasi voluptates!</p>
-            </div>
-        </div>
-
-    </div>
- </div>
-</section>
 
 
-
-<section>
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-4 d-flex flex-column  justify-content-center">
-                <h1 style="font-weight: bold;">Why We Are best in the Market</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora, eligendi ducimus quod vero enim? Vitae doloribus iste cum accusamus vero. Quos nemo quia ipsam aperiam veniam aliquid mollitia doloribus.</p>
-            </div>
-            <div class="col-md-8" >
-
-                <div class="row " style="justify-content: space-evenly  ;">
-                    <div class="col-md-5  my-2 px-4 pt-3" style="background-color: rgba(128, 128, 128, 0.382); border-radius: 20px;">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ullam iste voluptate doloremque commodi nisi porro dignissimos in, molestias ea neque magnam minima fuga sint, enim ipsum ducimus voluptates molestiae?</p>
-                    </div>
- 
-                    <div class="col-md-5 my-2 px-4 pt-3" style="background-color: rgba(128, 128, 128, 0.382); border-radius: 20px;">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ullam iste voluptate doloremque commodi nisi porro dignissimos in, molestias ea neque magnam minima fuga sint, enim ipsum ducimus voluptates molestiae?</p>
-                    </div>
-                    <div class="col-md-5 my-2  px-4 pt-3" style="background-color: rgba(128, 128, 128, 0.382); border-radius: 20px;">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ullam iste voluptate doloremque commodi nisi porro dignissimos in, molestias ea neque magnam minima fuga sint, enim ipsum ducimus voluptates molestiae?</p>
-                    </div>
-                    <div class="col-md-5 my-2  px-4 pt-3  " style="background-color: rgba(128, 128, 128, 0.382); border-radius: 20px;">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ullam iste voluptate doloremque commodi nisi porro dignissimos in, molestias ea neque magnam minima fuga sint, enim ipsum ducimus voluptates molestiae?</p>
-                    </div>
-               </div>
-
-
-
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section style="background-color: rgba(208, 208, 208, 0.241); padding: 50px; margin-bottom: 50px;">
-    <div class="container   "> 
-         <h2 class="text-center"  >Thats How Do We Work</h2>
-        <div class="row mt-5">
-
-            <div class=" col-12 col-sm-6 col-md-3" style="text-align: center;">
-                <h3 style="font-weight: bold;">Lorem ipsum dolor   </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
-            </div>
-           
-            <div class=" col-12 col-sm-6 col-md-3" style="text-align: center;">
-                <h3 style="font-weight: bold;">Lorem ipsum dolor   </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
-            </div>
-
-            <div class=" col-12 col-sm-6 col-md-3" style="text-align: center;">
-                <h3 style="font-weight: bold;">Lorem ipsum dolor   </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
-            </div>
-            <div class=" col-12 col-sm-6 col-md-3" style="text-align: center;">
-                <h3 style="font-weight: bold;">Lorem ipsum dolor   </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
-            </div>
-        </div>
-    </div>
-</section>
- 
-
-
-
-
-
- <!-- FOOTER -->
- <footer class="text-light  py-3 mt-5 foot " style="background-color:#F8F9FA;  ">
-    <div class="container" >
-        <div class="row">
-            <div class="col-8 col-md-4 col-sm-7 col-xs-6 col-lg-4 col-xl-4  ">
-                <a href="index.html"><img src="assests/images/bhavi/foot_bhavi_logo.png"  alt="" class="img-fluid  "  /></a>
-
-                <p style="color: black; font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae consectetur   </p>
-
-
-                <p style="color: #252525; font-weight: bold; " ><span style="color:#92989F; font-weight: bold;"><i class="fa-solid fa-phone"></i> </span>:  +91 9642343434 </p>
-
-
-                <a href="mailto:admin@bhavicreations.com" style="text-decoration: none;" >
-                <div class="d-flex">  
-                <span class="tooltip-container">
-                    <!-- <span class="tooltip" style="color: #000;">Click on</span> -->
-                    <span class="text">@</span>
-                     </span> &nbsp;
-                    
-                         <p  style="color: #252525; font-weight: bold;  "  >admin@bhavicreations.com </p> 
-                     
-                </div>
-                </a> 
-            
-
-
-           
-                <div class="mt-4">
-                    <a href="https://www.facebook.com/BhavicreationsPvtLtd/ " target="_blank"> <i style="font-size: 24px; color: #0000ff; " class="fa-brands fa-facebook px-1  footicon"></i></a> 
-                    <a href="https://www.instagram.com/bhavicreations_pvtltd/ " target="_blank"> <i style="font-size: 24px; color: #ec1475;" class="fa-brands fa-instagram  px-1 footicon"></i></a>
-                    <a href="https://twitter.com/bhavi_creations" target="_blank"> <i style="font-size: 24px; color: #000;" class="fa-brands  px-1  fa-square-x-twitter"></i></a>
-                    <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i style="font-size: 24px; color: #FF0000;" class="fa-brands fa-youtube  px-1  footicon"></i></a>
-                    <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i style="font-size: 24px;  color: #0077B5;  " class="fa-brands fa-linkedin   px-1 footicon"></i></a>
-                    <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i style="font-size: 24px ; color: #E60023;" class="fa-brands fa-pinterest px-1  footicon"></i></a>
-                     
-
-                </div>
-
-
-            </div>
-            <div class=" col-4 col-md-4 col-sm-5 col-xs-6 col-lg-3 col-xl-3 ">
-                <h3 class="paragraph1 mt-5 footer-heading" style="color: #92989F;font-weight:bold;font-size:18px;  ">Services</h3>
-                <a href="online_branding_mainpage.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Online</p></a>
-                <a href="main_offline_markiting.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Offline</p></a>
-                <a href="traditional_marketing.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Traditional Marketing</p></a>
-                <a href="software_mainpage.htm" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Customized Software</p></a>
-            </div>
-            <div class="col-7 col-md-2  col-sm-7 col-xs-6 col-lg-2 col-xl-2">
-                <h3 class="paragraph1 mt-5 footer-heading" style="color:#92989F;font-weight:bold;font-size:18px; ">Support</h3>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Pricing Plan</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Documentation</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500   ;">Guide</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Tutorial</p></a>
-            </div>
-            <div class="col-5 col-md-2 col-sm-5 col-xs-6 col-lg-2 col-xl-3">
-                
-                <h3 class="paragraph1 mt-5 footer-heading" style="color:#92989F;font-weight:bold;font-size:18px; ">Company  </h3>
-                <a href="about.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">About</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Blog</p></a>
-                <a href="contact_us.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500 ;">Join Us</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Partners</p></a>
-                
-            </div>
-        </div>
-    </div>
 
     <section>
 
-        <div class="container">
-        <hr style="border: none; height: 2px; background-color: rgb(76, 76, 76);">
+        <div class="container my-5 page-content_trad">
+
+            <a class="card_trad" href="traditional_pamphlets.html" style="text-decoration: none; color: white;">
+                <div>
+                    <div class="content_trad">
+                        <h2 class="title_trad">Pamplets</h2>
+                        <p class="copy_trad">Check out all of these gorgeous mountain trips with beautiful.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="card_trad" href="hoarding.html" style="text-decoration: none; color: white;">
+                <div>
+                    <div class="content_trad">
+                        <h2 class="title_trad">Hoardings</h2>
+                        <p class="copy_trad">Plan your next beach trip with these fabulous destinations</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card_trad" href="theatre_ads.html" style="text-decoration: none; color: white;">
+                <div>
+                    <div class="content_trad">
+                        <h2 class="title_trad">Theatre ads</h2>
+                        <p class="copy_trad">It's the desert you've always dreamed of</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card_trad" href="no_parking_ads.html" style="text-decoration: none; color: white;">
+                <div>
+                    <div class="content_trad">
+                        <h2 class="title_trad">No Parking Boards</h2>
+                        <p class="copy_trad">Seriously, straight up, just blast off into outer space today</p>
+                    </div>
+                </div>
+            </a>
+
+
+            <a  class="card_trad" href="traditional_flex.html" style="text-decoration: none; color: white;">
+                <div >
+                    <div class="content_trad">
+                        <h2 class="title_trad">Flex Designs</h2>
+                        <p class="copy_trad">Seriously, straight up, just blast off into outer space today</p>
+                    </div>
+                </div>
+            </a>
+
+
         </div>
+
+
 
     </section>
-    
-    <div class="footer-area-bottom theme-bg text-center">
-        <div class="container">
-           <div class="row">
-              <div class=" col-12">
-                <div class="footer-widget__copyright">
-                    <span style="color:#989898;font-weight: 400;"> Design with love © Bhavi Creations 2024.  All Rights Reserved  </span>
-                 </div>
-              </div> 
-               
-           </div>
+    <section style="background-color: rgb(7, 25, 78);">
+        <div class="container  ">
+            <div class="row ">
+                <div class="    col-md-6 my-5">
+                    <img src="assests/images/bhavi/pamplets main img.png"
+                        style="width: 400px; height: 500px; border-bottom-right-radius: 20%;" class="img-fluid" alt="">
+                </div>
+                <div class="  col-md-6 my-5">
+                    <h1 style="color: white;">We are Avaliable For 24/7 Emergency Service</h1>
+                    <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, tempora
+                        amet, dicta cumque quidem cum dolorem rem repudiandae sunt accusamus, nemo nesciunt quia
+                        similique quam dignissimos explicabo. Voluptatum, rem nam?</p>
+
+                    <div class="p-5 mb-5">
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-     </div>
+    </section>
 
+    <section>
+        <div class="container p-5">
+            <div class="row" style="justify-content: space-evenly;">
+
+                <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-center">
+
+                    <h3>Let's Explore the ways we can assist you in your Bussiness</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ut, error sint
+                        aperiam
+                        fuga, eaque et non laborum eius placeat delectus ipsa similique cum nisi! Explicabo, sint?
+                        Hic,
+                        in saepe.</p>
+
+                    <button class="contact_button mr-auto">Contact us</button>
+                </div>
+
+                <div class="col-lg-3 col-md-5 col-sm-10 my-4 text-center d-flex flex-column justify-content-end"
+                    style=" height: 550px; background-image: url(assests/images/online-branding/changeimg3\ \(1\).jpg); border-bottom-right-radius: 50px;">
+                    <!-- <img src="assests/images/online-branding/changeimg3 (1).jpg" alt="" height="450px" width="80%"
+                        style="border-bottom-right-radius: 50px;"> -->
+                    <b>
+                        <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+                            amet adipisci
+                            accusamus blanditiis officia repudiandae facilis commodi voluptate beatae sed tempore, a
+                            aspernatur, voluptates facere. Maxime, id velit. Alias, est.</p>
+                    </b>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-10 my-4 text-center d-flex flex-column justify-content-end"
+                    style="height: 550px; background-image: url(assests/images/online-branding/changeimg3\ \(1\).jpg); border-top-right-radius: 50px;">
+                    <!-- <img src="assests/images/online-branding/changeimg3 (1).jpg" alt="" height="450px" width="80%"
+                        style="border-top-right-radius: 50px;"> -->
+                    <b>
+                        <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                            suscipit sed consequatur
+                            est repudiandae, enim facere aliquam! Natus corporis dolore modi sed. Molestias quaerat
+                            nostrum iste perferendis eligendi, neque quo?</p>
+                    </b>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-5">
+            <div class="row" style="justify-content: space-evenly;">
+                <!-- <div class="col-md-4 d-flex flex-column  justify-content-center">
+                    <h1 style="font-weight: bold;">Why We Are best in the Market</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora, eligendi ducimus quod
+                        vero enim? Vitae doloribus iste cum accusamus vero. Quos nemo quia ipsam aperiam veniam aliquid
+                        mollitia doloribus.</p>
+                </div>
+                <div class="col-md-8">
+
+                    <div class="row " style="justify-content: space-evenly  ;">
+                        <div class="col-md-5  my-2 px-4 pt-3"
+                            style="background-color: rgba(128, 128, 128, 0.382); border-radius: 20px;">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ullam iste voluptate
+                                doloremque commodi nisi porro dignissimos in, molestias ea neque magnam minima fuga
+                                sint, enim ipsum ducimus voluptates molestiae?</p>
+                        </div>
+
+                        <div class="col-md-5 my-2 px-4 pt-3"
+                            style="background-color: rgba(128, 128, 128, 0.382); border-radius: 20px;">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ullam iste voluptate
+                                doloremque commodi nisi porro dignissimos in, molestias ea neque magnam minima fuga
+                                sint, enim ipsum ducimus voluptates molestiae?</p>
+                        </div>
+                        <div class="col-md-5 my-2  px-4 pt-3"
+                            style="background-color: rgba(128, 128, 128, 0.382); border-radius: 20px;">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ullam iste voluptate
+                                doloremque commodi nisi porro dignissimos in, molestias ea neque magnam minima fuga
+                                sint, enim ipsum ducimus voluptates molestiae?</p>
+                        </div>
+                        <div class="col-md-5 my-2  px-4 pt-3  "
+                            style="background-color: rgba(128, 128, 128, 0.382); border-radius: 20px;">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ullam iste voluptate
+                                doloremque commodi nisi porro dignissimos in, molestias ea neque magnam minima fuga
+                                sint, enim ipsum ducimus voluptates molestiae?</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div> -->
+
+                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                    <h2>Meet With <span>A House</span>Of Creatives</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nostrum in placeat commodi totam,
+                        quam cumque quibusdam ipsa quaerat? Quia rerum molestias voluptas animi totam. Impedit nesciunt
+                        doloribus quidem esse!</p>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg><b> Product Quality:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+                    <div class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg><b> Product Quality:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+
+                </div>
+                <div class="col-lg-6 col-md-12 mt-4">
+                    <img src="assests/images/bhavi/traditional.png" alt="" class="img-fluid">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section style="background-color:rgba(129,105,241,255);">
+        <div class="container  p-4 ">
+            <!-- <div class="row mt-5">
+
+                <div class=" col-12 col-sm-6 col-md-3" style="text-align: center;">
+                    <h3 style="font-weight: bold;">Lorem ipsum dolor </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class=" col-12 col-sm-6 col-md-3" style="text-align: center;">
+                    <h3 style="font-weight: bold;">Lorem ipsum dolor </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class=" col-12 col-sm-6 col-md-3" style="text-align: center;">
+                    <h3 style="font-weight: bold;">Lorem ipsum dolor </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class=" col-12 col-sm-6 col-md-3" style="text-align: center;">
+                    <h3 style="font-weight: bold;">Lorem ipsum dolor </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div> -->
+            <div class="row" style="justify-content: space-evenly;">
+                <div class="col-lg-3 col-md-3 col-sm-12 text-center ">
+                    <img src="assests/images/bhavi/image2.png" alt="" class="img-fluid imgage_for_sm">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center">
+                    <p class="text-center" style="color: white;">Hire us for Your Project </p>
+                    <h2 class="text-center" style="color: white;"><b>Lets Work Together</b></h2>
+                   
+                   <div class="text-center mt-2">
+                    <a href="contact_us.html"><button class="cta">
+                        <span>Contact Us</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button></a>
+                    <a href="" target="_blank"><p class="text-center" style="color: white;"><b>www.bhavicreations.com</b></p></a>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 text-center">
+                    <img src="assests/images/bhavi/logo.png" alt=""  class="img-fluid imgage_for_sm">
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-light  py-3 mt-5 foot " style="background-color:#F8F9FA;  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-md-4 col-sm-7 col-xs-6 col-lg-4 col-xl-4  ">
+                    <a href="index.html"><img src="assests/images/bhavi/foot_bhavi_logo.png" alt=""
+                            class="img-fluid  " /></a>
+
+                    <p style="color: black; font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat repudiandae consectetur </p>
+
+
+                    <p style="color: #252525; font-weight: bold; "><span style="color:#92989F; font-weight: bold;"><i
+                                class="fa-solid fa-phone"></i> </span>: +91 9642343434 </p>
+
+
+                    <a href="mailto:admin@bhavicreations.com" style="text-decoration: none;">
+                        <div class="d-flex">
+                            <span class="tooltip-container">
+                                <span class="tooltip" style="color: #000;">Click on</span>
+                                <span class="text">@</span>
+                            </span> &nbsp;
+
+                            <p style="color: #252525; font-weight: bold;  ">admin@bhavicreations.com </p>
+
+                        </div>
+                    </a>
+
+
+
+
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/BhavicreationsPvtLtd/ " target="_blank"> <i
+                                style="font-size: 24px; color: #0000ff; "
+                                class="fa-brands fa-facebook px-1  footicon"></i></a>
+                        <a href="https://www.instagram.com/bhavicreations_pvtltd/ " target="_blank"> <i
+                                style="font-size: 24px; color: #ec1475;"
+                                class="fa-brands fa-instagram  px-1 footicon"></i></a>
+                        <a href="https://twitter.com/bhavi_creations" target="_blank"> <i
+                                style="font-size: 24px; color: #000;"
+                                class="fa-brands  px-1  fa-square-x-twitter"></i></a>
+                        <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i
+                                style="font-size: 24px; color: #FF0000;"
+                                class="fa-brands fa-youtube  px-1  footicon"></i></a>
+                        <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i
+                                style="font-size: 24px;  color: #0077B5;  "
+                                class="fa-brands fa-linkedin   px-1 footicon"></i></a>
+                        <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i
+                                style="font-size: 24px ; color: #E60023;"
+                                class="fa-brands fa-pinterest px-1  footicon"></i></a>
+
+
+                    </div>
+
+
+                </div>
+                <div class=" col-4 col-md-4 col-sm-5 col-xs-6 col-lg-3 col-xl-3 ">
+                    <h3 class="paragraph1 mt-5 footer-heading"
+                        style="color: #92989F;font-weight:bold;font-size:18px;  ">Services</h3>
+                    <a href="online_branding_mainpage.html" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Online</p>
+                    </a>
+                    <a href="main_offline_markiting.html" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Offline</p>
+                    </a>
+                    <a href="traditional_marketing.html" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Traditional
+                            Marketing</p>
+                    </a>
+                    <a href="software_mainpage.htm" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Customized
+                            Software</p>
+                    </a>
+                </div>
+                <div class="col-7 col-md-2  col-sm-7 col-xs-6 col-lg-2 col-xl-2">
+                    <h3 class="paragraph1 mt-5 footer-heading" style="color:#92989F;font-weight:bold;font-size:18px; ">
+                        Support</h3>
+                    <a href="#" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Pricing Plan</p>
+                    </a>
+                    <a href="#" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Documentation</p>
+                    </a>
+                    <a href="#" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500   ;">Guide</p>
+                    </a>
+                    <a href="#" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Tutorial</p>
+                    </a>
+                </div>
+                <div class="col-5 col-md-2 col-sm-5 col-xs-6 col-lg-2 col-xl-3">
+
+                    <h3 class="paragraph1 mt-5 footer-heading" style="color:#92989F;font-weight:bold;font-size:18px; ">
+                        Company </h3>
+                    <a href="about.html" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">About</p>
+                    </a>
+                    <a href="#" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Blog</p>
+                    </a>
+                    <a href="contact_us.html" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500 ;">Join Us</p>
+                    </a>
+                    <a href="#" style=" text-decoration: none;">
+                        <p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Partners</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <section>
+
+            <div class="container">
+                <hr style="border: none; height: 2px; background-color: rgb(76, 76, 76);">
+            </div>
+
+        </section>
+
+        <div class="footer-area-bottom theme-bg text-center">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12">
+                        <div class="footer-widget__copyright">
+                            <span style="color:#989898;font-weight: 400;"> Design with love © Bhavi Creations 2024. All
+                                Rights Reserved </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- ENDING  FOOTER -->
+
+
+
+
+
+    <button id="scrollBtn" onclick="scrollToTop()"> <div class="pyramid-loader">
+        <div class="wrapper ">
+          <span class="side side1"></span>
+          <span class="side side2"></span>
+          <span class="side side3"></span>
+          <span class="side side4"></span>
+          <span class="shadow"></span>
+        </div>  
+      </div>
+    </button>
     
- </footer>
-  <!-- ENDING  FOOTER -->
-
-
-
-
-
-
-
-
-  <button id="scrollBtn" onclick="scrollToTop()"> <div class="pyramid-loader">
-    <div class="wrapper ">
-      <span class="side side1"></span>
-      <span class="side side2"></span>
-      <span class="side side3"></span>
-      <span class="side side4"></span>
-      <span class="shadow"></span>
-    </div>  
-  </div>
-</button>
-
-     
-  <script>
-
-
-
-
-    // Function to scroll to the top of the page
-    function scrollToTop() {
-          window.scrollTo({
-              top: 0,
-              behavior: 'smooth' // Optional, smooth scrolling animation
-          });
-      }
-  
-      // Show scroll button when scrolling down
-      window.onscroll = function() {scrollFunction()};
-  
-      function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("scrollBtn").style.display = "block";
-          } else {
-              document.getElementById("scrollBtn").style.display = "none";
+         
+      <script>
+    
+    
+    
+    
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+              window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth' // Optional, smooth scrolling animation
+              });
           }
-      }
+      
+          // Show scroll button when scrolling down
+          window.onscroll = function() {scrollFunction()};
+      
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("scrollBtn").style.display = "block";
+              } else {
+                  document.getElementById("scrollBtn").style.display = "none";
+              }
+          }
+    
+    
+    
+      </script>
+    
+    
 
 
 
-  </script>
 
 
+    <script>
+        $(document).ready(function () {
+            // Toggle dropdown on button click
+            $('.toggleDropdown').change(function () {
+                if ($(this).is(':checked')) {
+                    $('.dropdown-menu').show();
+                } else {
+                    $('.dropdown-menu').hide();
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-
-
-
-
-
-
- 
-<script>
-    $(document).ready(function () {
-      // Toggle dropdown on button click
-      $('.toggleDropdown').change(function () {
-        if ($(this).is(':checked')) {
-          $('.dropdown-menu').show();
-        } else {
-          $('.dropdown-menu').hide();
-        }
-      });
-    });
-  </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>

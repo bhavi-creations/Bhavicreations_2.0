@@ -223,7 +223,7 @@
   }
   
   .github {
-    background-color: #333;
+    background-color: #FF0000;
   }
   
   .github svg {
@@ -233,7 +233,7 @@
   }
   
   .github:hover svg {
-    fill: #333;
+    fill: #FF0000;
   }
   
   .linkedin {
@@ -855,3 +855,8 @@
             .carousel-item.active {
                 transform: scale(1.05);
             }
+
+
+
+
+            
