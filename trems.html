@@ -249,7 +249,18 @@
     
         </script>
         
-
+        <script>
+            $(document).ready(function () {
+              // Toggle dropdown on button click
+              $('.toggleDropdown').change(function () {
+                if ($(this).is(':checked')) {
+                  $('.dropdown-menu').show();
+                } else {
+                  $('.dropdown-menu').hide();
+                }
+              });
+            });
+        </script>
 
 
   
