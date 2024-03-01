@@ -518,9 +518,9 @@
   }
   
 
-
-
-   /* visting cards   */
+ /* visting cards   */
+ 
+  
 
 
    .iphone_card {
@@ -548,7 +548,7 @@
     background-position: 100% 100%;
   }
   
-  .top {
+  .top_iphone {
     position: absolute;
     top: 0px;
     right: 50%;
@@ -652,14 +652,25 @@
   
   .iphone_card:hover .hello {
     transform: translateY(-20px);
-  }
+  }  
   
   
+
+
+
+
+
+
+
+
+
+
+
   
  /* visiting cards   */
 
 
- .cls_btn_fold {
+   .cls_btn_fold {
     position: relative;
     font-size: 1.2em;
     padding: 0.7em 1.4em;
@@ -692,7 +703,7 @@
   .cls_btn_fold:active {
     box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
     transform: translate(0.1em, 0.1em);
-  }
+  }  
 
 
 
@@ -701,8 +712,7 @@
 
 
 
-
-
+ 
 
   .e-card {
     margin:50px ;
@@ -742,7 +752,7 @@
     right: 0;
     color: rgb(255, 255, 255);
     font-weight: 600;
-    text-transform: ;
+ 
   }
   
   .name {
@@ -792,4 +802,4 @@
     100% {
       transform: rotate(360deg);
     }
-  }
+  }  
