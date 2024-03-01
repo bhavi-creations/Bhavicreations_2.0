@@ -10,8 +10,7 @@
                 <link rel="stylesheet" href="assests/digital_animation.css">
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
                 
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+            
                         
                 <link rel="icon" href="assests/images/mini_l ogo.png" type="image/x-icon">
             
@@ -32,6 +31,98 @@
             
                 <link href="path_to_bootstrap/bootstrap.min.css" rel="stylesheet">
             
+
+
+<style>
+    * {
+  margin: 0; 
+padding: 0;
+}
+body {
+background: #fdfeff; 
+font-family: arial, verdana, tahoma;
+}
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+width: 805px; height: 320px;
+overflow: hidden;
+
+/*Time for some styling*/
+margin: 100px auto;
+box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+width: 1200px;
+/*This will give ample space to the last item to move
+instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+position: relative;
+display: block;
+width: 160px;
+float: left;
+
+border-left: 1px solid #888;
+
+box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+
+/*Transitions to give animation effect*/
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+/*If you hover on the images now you should be able to 
+see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+display: block;
+}
+
+/*Image title styles*/
+.image_title {
+background: rgba(0, 0, 0, 0.5);
+position: absolute;
+left: 0; bottom: 0;	
+width: 640px;	
+
+}
+.image_title a {
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 20px;
+font-size: 16px;
+}
+
+body {
+    background-color:#e8f4ff;
+}
+    
+</style>
+
               </head>
           <body  >
             
@@ -75,23 +166,13 @@
     </div>
 </section>
         
-<section class="mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <p>Projects</p>
-                <h3>Featured projects</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias esse, eum, cum necessitatibus totam, velit eligendi ex quis non molestiae earum. Eaque, placeat nulla quibusdam similique a aliquam quae iure.</p>
-            </div>
-        </div>
-    </div>
-  </section>
         
+        <!-- section1  -->
         
             <main>
-                <input type="radio" name="position" checked />
+                <input type="radio" name="position"  />
                 <input type="radio" name="position" />
-                <input type="radio" name="position" />
+                <input type="radio" name="position" checked/>
                 <input type="radio" name="position" />
                 <input type="radio" name="position" />
                 <main id="carousel">
@@ -118,38 +199,77 @@
               </div>
             </section>
             
-            
-             
-
-
             <section style=" background-color:#dbedff" class="p-5"   >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-12 col-sm-12  col-md-3 col-lg-3 col-xl-3">
-                            <img src="assests/images/bhavi/creative1.jpg" class="img-fluid shadow"/>
-                        </div>
-                        <div class="col-xs-12 col-12 col-sm-12  col-md-3 col-lg-3 col-xl-3 mt-2">
-                            <img src="assests/images/bhavi/creative1.jpg" class="img-fluid shadow"/>
-                        </div>
-                        <div class="col-xs-12 col-12 col-sm-12  col-md-3 col-lg-3 col-xl-3 mt-2">
-                            <img src="assests/images/bhavi/creative1.jpg" class="img-fluid shadow"/>
-                        </div>
-                        <div class="col-xs-12 col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2">
-                            <img src="assests/images/bhavi/creative1.jpg" class="img-fluid shadow"/>
-                        </div>
-                        <div class="col-xs-12 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
-                            <img src="assests/images/bhavi/creative2.jpg" style="width:600px; height:300px" class="img-fluid shadow"/>
-                        </div>
-                        <div class="col-xs-12 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
-                            <img src="assests/images/bhavi/creative2.jpg" style="width:700px; height:300px" class="img-fluid shadow"/>
-                        </div>
-                    </div>
-                </div>
-              </section>
-
-
-
-              <section class="mt-5 section"  id="section3" style=" background-image: url(assests/images/online-branding/design4.png);  background-size: cover; ">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2">
+                          <img src="assests/images/bhavi/creative1.jpg" class="img-fluid shadow"/>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2">
+                          <img src="assests/images/bhavi/creative1.jpg" class="img-fluid shadow"/>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2">
+                          <img src="assests/images/bhavi/creative1.jpg" class="img-fluid shadow"/>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-2">
+                          <img src="assests/images/bhavi/creative1.jpg" class="img-fluid shadow"/>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
+                          <img src="assests/images/bhavi/creative2.jpg" style="width:600px; height:300px" class="img-fluid shadow"/>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xl-3 mt-2">
+                          <img src="assests/images/bhavi/creative2.jpg" style="width:700px; height:300px" class="img-fluid shadow"/>
+                      </div>
+                  </div>
+              </div>
+            </section>
+            
+            <h1 class="text-center mt-5">heading</h1>
+            <div class="accordian d-none d-md-block" style="margin-top:-1px">
+                <ul>
+                <li>
+                  <div class="image_title">
+                    <a href="#">KungFu Panda</a>
+                  </div> 
+                  <a href="#">
+                    <img src="https://picsum.photos/530/290/?random=1"/>
+                  </a>
+                </li>
+                <li>
+                  <div class="image_title">
+                    <a href="#">Toy Story 2</a>
+                  </div>
+                  <a href="#">
+                    <img src="https://picsum.photos/530/290"/>
+                  </a>
+                </li>
+                <li>
+                  <div class="image_title">
+                    <a href="#">Wall-E</a>
+                  </div>
+                  <a href="#">
+                    <img src="https://picsum.photos/530/290/?random=1"/>
+                  </a>
+                </li>
+                <li>
+                  <div class="image_title">
+                    <a href="#">Up</a>
+                  </div>
+                  <a href="#">
+                    <img src="https://picsum.photos/530/290?random=1"/>
+                  </a>
+                </li>
+                <li>
+                  <div class="image_title">
+                    <a href="#">Cars 2</a>
+                  </div>
+                  <a href="#">
+                    <img src="https://picsum.photos/530/290/"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <section class="mt-5 section"  id="section3" style=" background-image: url(assests/images/online-branding/design4.png);  background-size: cover; ">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -162,16 +282,16 @@
             
                 <div class="container mt-5">
                     <div class="row">
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 mt-3">
-                            <img src="assests/images/online-branding/stepimg1 (1).jpg" class="img-fluid animate_animated animate_bounceInDown animate" />
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                            <img src="assests/images/online-branding/stepimg1 (1).jpg" class="img-fluid animate_animated animate_bounceInDown" style="margin-top:80px"/>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 mt-3">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                             <img src="assests/images/online-branding/stepimg2 (1).webp" class="img-fluid animate_animated animate_bounceInDown" />
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 mt-3">
-                            <img src="assests/images/online-branding/stepimg3 (1).png" class="img-fluid animate_animated animate_bounceInDown animate" />
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                            <img src="assests/images/online-branding/stepimg3 (1).png" class="img-fluid animate_animated animate_bounceInDown" style="margin-top:80px"/>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 mt-3">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                             <img src="assests/images/online-branding/stepimg4 (1).jpg" class="img-fluid animate_animated animate_bounceInDown"/>
                         </div>
                         <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 mt-3">
@@ -205,119 +325,9 @@
                     <!-- Design images will be dynamically added here -->
                 </div>
             
-            </section>
-
-
- 
+            </section> 
         
         <!-- section 2  -->
-        
-        <section style="margin-top:200px" class="mobileview d-none d-md-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card shadow p-5">
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="row">
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/changeimg1 (1).jpg')" class="img-fluid shadow" style="margin-top:-50px"/>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/logopageimg.png')" class="img-fluid shadow" style="margin-top:-50px"/>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/changeimg2 (1).jpg')" class="img-fluid shadow" style="margin-top:-50px"/>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/changeimg3 (1).jpg')" class="img-fluid mt-2 shadow" />
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/changeimg4 (1).jpg')" class="img-fluid mt-2 shadow" />
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/logopageimg.png')" class="img-fluid mt-2 shadow" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h2 class="card-heading text-center mt-2">We Design Best Logos</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-6 col-xl-6 d-none d-sm-none d-md-block">
-                                    <img src="assests/images/bhavi/logopageimg.png" class="img-fluid" id="mainImage" style="margin-top:-200px;margin-bottom:-60px"/>
-                                </div>
-                                <div class="col-12 d-block d-md-none">
-                                    <img src="assests/images/bhavi/logopageimg.png" class="img-fluid" id="mainImage" style="margin-bottom:-90px"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <script>
-            function changeImage(newImageSrc) {
-                var mainImage = document.getElementById('mainImage');
-                mainImage.src = newImageSrc;
-            }
-        </script>
-        
-        <!-- for small devices  -->
-        <section style="margin-top:50px" class="mobileview d-block d-md-none">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card  shadow p-5">
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="row ">
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/changeimg1 (1).jpg')" class="img-fluid shadow" style="margin-top:-80px"/>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png"  onclick="changeImage('assests/images/bhavi/logopageimg.png')" class="img-fluid shadow" style="margin-top:-80px" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/changeimg2 (1).jpg')" class="img-fluid mt-2 shadow" />
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/changeimg3 (1).jpg')" class="img-fluid mt-2 shadow" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png" onclick="changeImage('assests/images/bhavi/changeimg4 (1).jpg')" class="img-fluid mt-2 shadow" />
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                            <img src="assests/images/bhavi/card image in logopage.png"  onclick="changeImage('assests/images/bhavi/logopageimg.png')" class="img-fluid mt-2 shadow" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 ">
-                                            <h2 class="card-heading text-center p-2">We Design Best Logos</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-6 col-xl-6 d-none d-sm-none d-md-block">
-                                    <img src="assests/images/bhavi/logopageimg.png" class="img-fluid" style="margin-top:-200px;margin-bottom:-60px"/>
-                                </div>
-                                <div class="col-12 d-block d-md-none">
-                                    <img src="assests/images/bhavi/logopageimg.png" class="img-fluid" style="margin-bottom:-90px"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         
         <section class="mt-5 p-5 lastsec">
             <div class="container">
@@ -431,7 +441,7 @@
 
 
 
-  <button id="scrollBtn" onclick="scrollToTop()"> <div class="pyramid-loader animate__animated animate__bounceInDown">
+  <button id="scrollBtn" onclick="scrollToTop()"> <div class="pyramid-loader">
     <div class="wrapper ">
       <span class="side side1"></span>
       <span class="side side2"></span>
