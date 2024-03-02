@@ -117,7 +117,7 @@
         }
 
 
-.card {
+.contact-card {
   /* width: 190px;
   height: 254px; */
   height: auto;
@@ -131,7 +131,7 @@
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 
-  .card {
+  .contact-card {
   position: relative;
   width: 190px;
   height: 254px;
@@ -141,7 +141,7 @@
   align-items: center;
 }
 
-.card::before {
+.contact-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -151,7 +151,7 @@
   background: linear-gradient(315deg,#03a9f4,#ff0058);
 }
 
-.card::after {
+.contact-card::after {
   content: '';
   position: absolute;
   top: 0;
@@ -169,7 +169,7 @@
 
 }
 
-button {
+.contact_button {
     padding: 17px 40px;
     border-radius: 50px;
     cursor: pointer;
@@ -182,14 +182,14 @@ button {
     transition: all 0.5s ease;
   }
   
-  button:hover {
+  .contact_button:hover {
     letter-spacing: 3px;
     background-color: hsl(236, 80%, 48%);
     color: hsl(0, 0%, 100%);
     box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
   }
   
-  button:active {
+  .contact_button:active {
     letter-spacing: 3px;
     background-color: hsl(261deg 80% 48%);
     color: hsl(0, 0%, 100%);
@@ -222,6 +222,39 @@ button {
 }
 
 
+    /* Style for dropdown */
+    .dropdown select {
+        appearance: none;
+        background-color: #fff;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+        width: 100%;
+        transition: border-color 0.3s;
+    }
+
+    .dropdown select:hover,
+    .dropdown select:focus {
+        border-color: #0056b3;
+    }
+
+    /* Style for dropdown arrow */
+    .dropdown::after {
+        content: "\25BC"; /* Down arrow */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    /* Style for dropdown arrow on hover */
+    .dropdown:hover::after {
+        color: #0056b3;
+    }
 </style>
 
 <body>
@@ -303,7 +336,7 @@ button {
 
     <div class="container contact_form shadow" style="border-radius: 30px; background-color: white;">
         <div class="row">
-            <div class="col-lg-5 col-md-6 col-sm-12 pt-5 ps-5 card" style="background-color: black; border-radius: 30px; animation: fadeInLeft 1s ease;">
+            <div class="col-lg-5 col-md-6 col-sm-12 pt-5 ps-5 contact-card" style="background-color: black; border-radius: 30px; animation: fadeInLeft 1s ease;">
                 <h1 class="text-light">Contact Information</h1>
                 <p class="text-light">Say Something to start a live chat</p>
                 <p class="text-light mt-5 pt-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-telephone-fill " viewBox="0 0 16 16">
@@ -343,7 +376,9 @@ button {
                     </div>
                     <div class=" container ">
                         <div class="row d-flex flex-row mt-5">
-                         
+                            <!-- <div class="col-3">
+                                <h6>Select Subject: </h6>
+                            </div> -->
                             <div class="col-9" >
                                 <select id="subject" name="subject" style="width:200px;height:25px;border-width:0px">
                                     <option value="math">Select Subject</option>
@@ -351,7 +386,8 @@ button {
                                     <option value="history">Logo Design</option>
                                     <option value="english">Social Media Marketing</option>
                                     <option value="english">Opening Events</option>
-                                 </select>
+                                    <!-- Add more options as needed -->
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -406,7 +442,7 @@ button {
 
                     <div class="ms-5">
                         <!-- <button type="submit" class="btn btn-danger" style="background-color: #ff5733;">submit</button> -->
-                        <button type="submit" style="color:white">Submit</button>
+                        <button type="submit" class="contact_button" style="color:white">Submit</button>
 
                     </div>
 
