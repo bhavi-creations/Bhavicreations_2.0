@@ -293,7 +293,7 @@ input[type]:checked ~ span.mid {
 .tooltip-container .text {
   color: rgb(32, 30, 30);
   font-weight: bold;
-  font-size: 24px;
+   
 }
 
 .tooltip {
@@ -346,11 +346,60 @@ input[type]:checked ~ span.mid {
   opacity: 1;
   transition-duration: 0.3s;
 }
+@media (min-width:1200px)   {
 
+
+  .mail_text_box{
+    margin-left: 40px;
+  }
+  
+    
+  }
+ 
+@media (min-width:992px) and (max-width:1200px) {
+
+
+.mail_text_box{
+  margin-left: 10px;
+}
+
+  
+}
+
+@media (min-width:768px) and (max-width:992px) {
+
+
+  .mail_text_box{
+    margin-left:  -15px;
+  }
+  
+    
+  }
+ 
+  @media (min-width:576px) and  (max-width:768px) {
  
 
+    .mail_text_box{
+      margin-left: 120px;
+      margin-bottom: 50px;
+    }
+    
+    
+      
+    }
+     
+  @media   (max-width:576px) {
+ 
 
+    .mail_text_box{
+      margin-left:30px;
 
+ 
+      margin-bottom: 50px;
+    }
+    
+      
+    }
 
 
 

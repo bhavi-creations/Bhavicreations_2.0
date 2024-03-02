@@ -24,8 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+ 
     <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -43,7 +42,6 @@
 
 
 </head>
-
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -73,23 +71,7 @@
 
 
 
-    .map_overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        /* Ensure the text is above the map */
-        /* background-color: rgba(255, 255, 255, 0.5);  */
-        padding: 20px;
-        text-align: center;
-        /* color: rgb(255, 0, 64); */
-        
-    }
-
-
-
+    
     textarea {
         width: 100%;
         max-width: 100%;
@@ -106,77 +88,180 @@
 
 
 
-    .map_frame {
-        opacity: 0.5;
+    /* .map_frame {
+        opacity: 1;
+    } */
+
+
+ 
+
+
+   .map-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            margin-bottom: 20px; /* Added margin for spacing between maps */
+        }
+
+        .map_frame {
+            width: 100%;
+            height: 600px; /* Adjust the height as needed */
+            border: 0;
+        }
+
+        .map_overlay {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 10px; /* Adjust the right position as needed */
+            z-index: 999; /* Ensure it's above the map */
+        }
+
+
+.card {
+  /* width: 190px;
+  height: 254px; */
+  height: auto;
+  width: auto;
+  border-radius: 1rem;
+  /* background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #536dce 46%, #6b83dc 100%);
+
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+  .card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background: #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#03a9f4,#ff0058);
+  filter: blur(30px);
+}
+
+ 
+
+ 
+ 
+
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: #0092FF;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(236, 80%, 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+
+  @keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
     }
-
-
- 
-
-
-    .map-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.map-container .map_frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-
- 
 
 </style>
 
 <body>
 
- 
-<!-- Navbar -->
-<section   class="sticky_nav    shadow-lg"  > 
-    <div class="container nav_main">
-        <div class="d-flex justify-content-between align-items-center">
-            
-        <a href="index.html"> <img src="assests/images/bhavi/blue logo.png"  class="img-fluid   d-none d-md-block"  style="width: 250px;height: 120px;" alt=""></a>   
-            
 
-            <!-- <span  class="address  d-none d-md-block animated-text animate__animated animate__bounceInDown"> <i class="bi bi-geo-alt-fill"></i>  Kakinada</span>
-            <span  class="address  d-none d-md-block  animated-texto animate__animated animate__bounceInDown"><i class="bi bi-geo-alt-fill"></i>    Rajahmundry</span> -->
+    <!-- Navbar -->
+    <section class="sticky_nav    shadow-lg">   
+        <div class="container nav_main p-3">
+            <div class="d-flex justify-content-between align-items-center">
 
-          <a href="index.html">  <img src="assests/images/bhavi/blue logo.png"  class="img-fluid  d-block d-md-none" style="width: 200px;height: 100px;" alt=""></a>
+                <a href="index.html"> <img src="assests/images/bhavi/foot_bhavi_logo.png"
+                        class="img-fluid   " style="width: 150px;height: 65px;" alt=""></a>
 
-           
 
-            <label for="check1" class="menuButton text-center onlyfortab" >
-                <input id="check1" type="checkbox" class="toggleDropdown">
-                <span class="top"></span>
-                <span class="mid"></span>
-                <span class="bot"></span>
-              </label>
-  
-   
-       
-  
-              <ul class="dropdown-menu dropdown-menu-end menu_border">
-                <li><a class="dropdown-item menu_item_black" href="index.html">Home</a></li>
-                <li><a class="dropdown-item menu_item_black" href="about.html">About</a></li>
-                <li><a class="dropdown-item menu_item_black" href="services.html">Services</a></li>
-                <li><a class="dropdown-item menu_item_black  " href="Portfolio.html">Portfolio</a></li>
-                <li><a class="dropdown-item menu_item_black lol" href="contact_us.html">Contact Us</a></li>
-              </ul>
-  
- 
+              
+
+
+
+                <label for="check1" class="menuButton text-center onlyfortab">
+                    <input id="check1" type="checkbox" class="toggleDropdown">
+                    <span class="top"></span>
+                    <span class="mid"></span>
+                    <span class="bot"></span>
+                </label>
+
+
+
+
+                <ul class="dropdown-menu dropdown-menu-end menu_border">
+                    <li><a class="dropdown-item menu_item_black" href="index.html">Home</a></li>
+                    <li><a class="dropdown-item menu_item_black" href="about.html">About</a></li>
+                    <li><a class="dropdown-item menu_item_black" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item menu_item_black  " href="Portfolio.html">Portfolio</a></li>
+                    <li><a class="dropdown-item menu_item_black lol" href="contact_us.html">Contact Us</a></li>
+                </ul>
+
+
+            </div>
         </div>
-    </div>
-</section>
-        
-
- 
+    </section>
 
 
     <div class="container main_section mt-5 pt-5">
@@ -216,30 +301,18 @@
     <!--  ENDING MAIN SECTION -->
 
 
-
-
-
-    <div class="container contact_form  shadow  " style="border-radius: 30px; background-color: white;">
+    <div class="container contact_form shadow" style="border-radius: 30px; background-color: white;">
         <div class="row">
-            <div class="col-lg-5 col-md-6 col-sm-12 pt-5 ps-5" style="background-color: black; border-radius: 30px;">
+            <div class="col-lg-5 col-md-6 col-sm-12 pt-5 ps-5 card" style="background-color: black; border-radius: 30px; animation: fadeInLeft 1s ease;">
                 <h1 class="text-light">Contact Information</h1>
                 <p class="text-light">Say Something to start a live chat</p>
-
-
-                <p class="text-light mt-5 pt-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="white" class="bi bi-telephone-fill " viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-
+                <p class="text-light mt-5 pt-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                     </svg> &nbsp; &nbsp; &nbsp; +91 9642343434</p>
-                <p class="text-light mt-5"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
-                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                <p class="text-light mt-5"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
                     </svg> &nbsp; &nbsp; &nbsp; Bhavicreations@gmail.com</p>
-
-                <p class="text-light mt-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <p class="text-light mt-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                     </svg> &nbsp; &nbsp; &nbsp; Bhavi Creations Pvt Ltd <br>
                     <span class="ms-5">Plot no 28, H No 70, 17-28, RTO Office Rd,</span><br>
@@ -247,10 +320,8 @@
                         <span class="ms-5"> College Play Ground, Ranga Rao Nagar,<br> </span>
                         <span class="ms-5"> Kakinada, Andhra Pradesh 533003 </span>
                 </p>
-
-
             </div>
-            <div class="col-lg-7  col-md-6 col-sm-12 mt-5">
+            <div class="col-lg-7 col-md-6 col-sm-12 mt-5" style="animation: fadeInRight 1s ease;">
                 <form action="contact_mail.php" method="post" class="ms-5  mt-5 mb-3">
                     <div class="row">
                         <div class="col-lg-6">
@@ -270,26 +341,56 @@
                             <input type="email" id="email" name="email" class="inputemail mb-2" required><br>
                         </div>
                     </div>
-                    <h6 class="mt-5"> select Subject</h6>
-                    <div class="row mt-5">
-                        <div class="col-lg-3">
-                            <input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">Inquiry</label><br>
+                    <div class=" container ">
+                        <div class="row d-flex flex-row mt-5">
+                         
+                            <div class="col-9" >
+                                <select id="subject" name="subject" style="width:200px;height:25px;border-width:0px">
+                                    <option value="math">Select Subject</option>
+                                    <option value="science">Web development</option>
+                                    <option value="history">Logo Design</option>
+                                    <option value="english">Social Media Marketing</option>
+                                    <option value="english">Opening Events</option>
+                                 </select>
+                            </div>
                         </div>
-                        <div class="col-lg-3">
-                            <input type="radio" id="html" name="fav_language" value="HTML">
-                              <label for="html">Inquiry</label><br>
-                        </div>
-                        <div class="col-lg-3">
-                            <input type="radio" id="html" name="fav_language" value="HTML">
-                              <label for="html">Inquiry</label><br>
-                        </div>
-                        <div class="col-lg-3">
-                            <input type="radio" id="html" name="fav_language" value="HTML">
-                              <label for="html">Inquiry</label><br>
-                        </div>
-
                     </div>
+                  
+                    <!-- <div class="row mt-5">
+                        <div class="col-lg-3">
+                            <label for="inquiry1">Inquiry 1:</label>
+                            <select id="inquiry1" name="inquiry1">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="inquiry2">Inquiry 2:</label>
+                            <select id="inquiry2" name="inquiry2">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="inquiry3">Inquiry 3:</label>
+                            <select id="inquiry3" name="inquiry3">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="inquiry4">Inquiry 4:</label>
+                            <select id="inquiry4" name="inquiry4">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    
                      
                      
                     <!-- <div class="col-12">
@@ -298,122 +399,160 @@
                     </div> -->
                     <!-- <textarea id="message" name="message" rows="4"    class="inputmessage mb-2" required></textarea><br> -->
                     <div class="col-12">
-                        <label for="message" class="ms-2 mt-5">Message</label><br>
+                        <label for="message" class=" mt-5">Message</label><br>
                         <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
                     </div>
                     <br>
 
                     <div class="ms-5">
-                        <button type="submit" class="btn btn-danger" style="background-color: #ff5733;">submit</button>
+                        <!-- <button type="submit" class="btn btn-danger" style="background-color: #ff5733;">submit</button> -->
+                        <button type="submit" style="color:white">Submit</button>
+
                     </div>
 
                 </form>
-
-            </div>
-        </div>
-    </div>
-   
-
-
-
-
-
-
-
-
-
- <!-- FOOTER -->
- <footer class="text-light  py-3 mt-5 foot " style="background-color:#F8F9FA;  ">
-    <div class="container" >
-        <div class="row">
-            <div class="col-8 col-md-4 col-sm-7 col-xs-6 col-lg-4 col-xl-4  ">
-                <a href="index.html"><img src="assests/images/bhavi/foot_bhavi_logo.png"  alt="" class="img-fluid  "  /></a>
-
-                <p style="color: black; font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae consectetur   </p>
-
-
-                <p style="color: #252525; font-weight: bold; " ><span style="color:#92989F; font-weight: bold;"><i class="fa-solid fa-phone"></i> </span>:  +91 9642343434 </p>
-
-
-                <a href="mailto:admin@bhavicreations.com" style="text-decoration: none;" >
-                <div class="d-flex">  
-                <span class="tooltip-container">
-                    <!-- <span class="tooltip" style="color: #000;">Click on</span> -->
-                    <span class="text">@</span>
-                     </span> &nbsp;
-                    
-                         <p  style="color: #252525; font-weight: bold;  "  >admin@bhavicreations.com </p> 
-                     
-                </div>
-                </a> 
-            
-
-
-           
-                <div class="mt-4">
-                    <a href="https://www.facebook.com/BhavicreationsPvtLtd/ " target="_blank"> <i style="font-size: 24px; color: #0000ff; " class="fa-brands fa-facebook px-1  footicon"></i></a> 
-                    <a href="https://www.instagram.com/bhavicreations_pvtltd/ " target="_blank"> <i style="font-size: 24px; color: #ec1475;" class="fa-brands fa-instagram  px-1 footicon"></i></a>
-                    <a href="https://twitter.com/bhavi_creations" target="_blank"> <i style="font-size: 24px; color: #000;" class="fa-brands  px-1  fa-square-x-twitter"></i></a>
-                    <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i style="font-size: 24px; color: #FF0000;" class="fa-brands fa-youtube  px-1  footicon"></i></a>
-                    <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i style="font-size: 24px;  color: #0077B5;  " class="fa-brands fa-linkedin   px-1 footicon"></i></a>
-                    <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i style="font-size: 24px ; color: #E60023;" class="fa-brands fa-pinterest px-1  footicon"></i></a>
-                     
-
-                </div>
-
-
-            </div>
-            <div class=" col-4 col-md-4 col-sm-5 col-xs-6 col-lg-3 col-xl-3 ">
-                <h3 class="paragraph1 mt-5 footer-heading" style="color: #92989F;font-weight:bold;font-size:18px;  ">Services</h3>
-                <a href="online_branding_mainpage.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Online</p></a>
-                <a href="main_offline_markiting.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Offline</p></a>
-                <a href="traditional_marketing.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Traditional Marketing</p></a>
-                <a href="software_mainpage.htm" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Customized Software</p></a>
-            </div>
-            <div class="col-7 col-md-2  col-sm-7 col-xs-6 col-lg-2 col-xl-2">
-                <h3 class="paragraph1 mt-5 footer-heading" style="color:#92989F;font-weight:bold;font-size:18px; ">Support</h3>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Pricing Plan</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Documentation</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500   ;">Guide</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Tutorial</p></a>
-            </div>
-            <div class="col-5 col-md-2 col-sm-5 col-xs-6 col-lg-2 col-xl-3">
-                
-                <h3 class="paragraph1 mt-5 footer-heading" style="color:#92989F;font-weight:bold;font-size:18px; ">Company  </h3>
-                <a href="about.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">About</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Blog</p></a>
-                <a href="contact_us.html" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500 ;">Join Us</p></a>
-                <a href="#" style=" text-decoration: none;" ><p class="paragraph1 footer-paragraph" style="color:#252525;font-weight: 500;">Partners</p></a>
-                
             </div>
         </div>
     </div>
 
-    <section>
 
-        <div class="container">
-        <hr style="border: none; height: 2px; background-color: rgb(76, 76, 76);">
+
+
+
+
+    <!-- FOOTER -->
+
+
+    <footer class="text-light    mt-5 foot " style="background-color:#F8F9FA;  ">
+        <div class="container " style="padding-top: 100px;">
+            <div class="row">
+
+                <div class="   col-md-4 text-center order-2 order-md-1"  >
+
+                    <p style="color: #6a6b6b;font-weight:bold;font-size:24px;  ">Kakinada</p>
+                    <p style="color: #000;">Behind J.N.T.U Engineering College Play Ground,
+                        Ranga Rao Nagar, Kakinada, Andhra Pradesh 533003</p>
+
+
+                    <div class="mt-4  " style="margin-bottom: 55px;">
+                        <a href="https://www.facebook.com/BhavicreationsPvtLtd/ " target="_blank"> <i
+                                style="font-size: 24px; color: #0000ff; "
+                                class="fa-brands fa-facebook px-1  footicon"></i></a>
+                        <a href="https://www.instagram.com/bhavicreations_pvtltd/ " target="_blank"> <i
+                                style="font-size: 24px; color: #ec1475;"
+                                class="fa-brands fa-instagram  px-1 footicon"></i></a>
+                        <a href="https://twitter.com/bhavi_creations" target="_blank"> <i
+                                style="font-size: 24px; color: #000;"
+                                class="fa-brands  px-1  fa-square-x-twitter"></i></a>
+                        <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i
+                                style="font-size: 24px; color: #FF0000;"
+                                class="fa-brands fa-youtube  px-1  footicon"></i></a>
+                        <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i
+                                style="font-size: 24px;  color: #0077B5;  "
+                                class="fa-brands fa-linkedin   px-1 footicon"></i></a>
+                        <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i
+                                style="font-size: 24px ; color: #E60023;"
+                                class="fa-brands fa-pinterest px-1  footicon"></i></a>
+
+
+                    </div>
+                </div>
+
+
+                <div class="  col-md-4  order-1 order-md-2" style="text-align: center; ">
+                    <a href="index.html"><img src="assests/images/bhavi/foot_bhavi_logo.png"  style="width: 150px;height: 65px;" alt=""
+                            class="img-fluid  " />
+                    </a>
+
+
+
+
+                    <h5 style="color: #252525; font-weight: 1000; margin-top: 30px; ">
+                        <span style="color:#92989F; font-weight: bold;">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>: +91 9642343434   
+                    </h5>
+
+
+                   <a href="mailto:admin@bhavicreations.com" style="text-decoration: none; ">
+                        <div class="d-flex mail_text_box" style="margin-top: 30px;" >
+                            <span class="tooltip-container  ">
+
+                                <span class="text">@</span>
+                            </span> &nbsp;
+
+                            <p style="color: #252525; font-weight: bold;  "> admin@bhavicreations.com </p>
+
+                        </div>
+                    </a> 
+
+
+ 
+                </div>
+
+                <div class="    col-md-4 text-center order-3  order-md-3" >
+
+                    <p style="color: #6a6b6b;font-weight:bold;font-size:24px;  ">Rajahmundry</p>
+                    <p style="color: #000;">  Dheemahi Bhavan, spencer back side, near Ladies Club, Prakasam Nagar, Rajamahendravaram, Andhra Pradesh 533103</p>
+
+
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/Bhavicreations.rajahmundry" target="_blank"> <i
+                                style="font-size: 24px; color: #0000ff; "
+                                class="fa-brands fa-facebook px-1  footicon"></i></a>
+                        <a href="https://www.instagram.com/bhavicreationspvt_ltd.rjy/" target="_blank"> <i
+                                style="font-size: 24px; color: #ec1475;"
+                                class="fa-brands fa-instagram  px-1 footicon"></i></a>
+                        <a href="https://twitter.com/bhavi_creations" target="_blank"> <i
+                                style="font-size: 24px; color: #000;"
+                                class="fa-brands  px-1  fa-square-x-twitter"></i></a>
+                        <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i
+                                style="font-size: 24px; color: #FF0000;"
+                                class="fa-brands fa-youtube  px-1  footicon"></i></a>
+                        <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i
+                                style="font-size: 24px;  color: #0077B5;  "
+                                class="fa-brands fa-linkedin   px-1 footicon"></i></a>
+                        <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i
+                                style="font-size: 24px ; color: #E60023;"
+                                class="fa-brands fa-pinterest px-1  footicon"></i></a>
+
+
+                    </div>
+                </div>
+
+
+            </div>
         </div>
 
-    </section>
-    
-    <div class="footer-area-bottom theme-bg text-center">
-        <div class="container">
-           <div class="row">
-              <div class=" col-12">
-                <div class="footer-widget__copyright">
-                    <span style="color:#989898;font-weight: 400;"> Design with love © Bhavi Creations 2024.  All Rights Reserved  </span>
-                 </div>
-              </div> 
-               
-           </div>
+
+
+
+
+        <section>
+
+            <div class="container" >
+                <hr style="border: none; height: 2px; background-color: rgb(76, 76, 76); margin-top: 55px;">
+            </div>
+
+        </section>
+
+        <div class="footer-area-bottom theme-bg text-center">
+            <div class="container" style="margin-top: 30px; margin-bottom: 30px;">
+                <div class="row">
+                    <div class=" col-12">
+                        <div class="footer-widget__copyright">
+                            <span style="color:#989898;font-weight: 400;"> Design with love © Bhavi Creations 2024. All
+                                Rights Reserved </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-     </div>
 
-    
- </footer>
-  <!-- ENDING  FOOTER -->
 
+    </footer>
+    <!-- ENDING  FOOTER -->
 
 
 
@@ -421,45 +560,47 @@
 
 
 
-  <button id="scrollBtn" onclick="scrollToTop()"> <div class="pyramid-loader animate__animated animate__bounceInDown">
-    <div class="wrapper ">
-      <span class="side side1"></span>
-      <span class="side side2"></span>
-      <span class="side side3"></span>
-      <span class="side side4"></span>
-      <span class="shadow"></span>
-    </div>  
-  </div>
-</button>
-
-     
-  <script>
-
+ 
+    <button id="scrollBtn" onclick="scrollToTop()">
+        <div class="pyramid-loader animate__animated animate__bounceInDown">
+            <div class="wrapper ">
+                <span class="side side1"></span>
+                <span class="side side2"></span>
+                <span class="side side3"></span>
+                <span class="side side4"></span>
+                <span class="shadow"></span>
+            </div>
+        </div>
+    </button>
 
 
-
-    // Function to scroll to the top of the page
-    function scrollToTop() {
-          window.scrollTo({
-              top: 0,
-              behavior: 'smooth' // Optional, smooth scrolling animation
-          });
-      }
-  
-      // Show scroll button when scrolling down
-      window.onscroll = function() {scrollFunction()};
-  
-      function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("scrollBtn").style.display = "block";
-          } else {
-              document.getElementById("scrollBtn").style.display = "none";
-          }
-      }
+    <script>
 
 
 
-  </script>
+
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Optional, smooth scrolling animation
+            });
+        }
+
+        // Show scroll button when scrolling down
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollBtn").style.display = "none";
+            }
+        }
+
+
+
+    </script>
 
 
 
@@ -481,18 +622,18 @@
 
 
 
-<script>
-    $(document).ready(function () {
-      // Toggle dropdown on button click
-      $('.toggleDropdown').change(function () {
-        if ($(this).is(':checked')) {
-          $('.dropdown-menu').show();
-        } else {
-          $('.dropdown-menu').hide();
-        }
-      });
-    });
-  </script>
+    <script>
+        $(document).ready(function () {
+            // Toggle dropdown on button click
+            $('.toggleDropdown').change(function () {
+                if ($(this).is(':checked')) {
+                    $('.dropdown-menu').show();
+                } else {
+                    $('.dropdown-menu').hide();
+                }
+            });
+        });
+    </script>
 
 
 </body>
