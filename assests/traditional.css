@@ -1,0 +1,123 @@
+
+/* first section  */
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* text_color */
+
+
+.text_color{
+    color: rgb(108, 106, 106);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.heading_color{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* plamplate page  */
+
+
+/* 3rd section  */
+
+@media (min-width:1200px) {
+
+.second_div{
+   padding-top: 280px !important;
+}
+}
+
+@media (min-width:998px)  and (max-width:1200px){
+
+    .second_div{
+       padding-top: 100px !important;
+    }
+    }
+
+@media (min-width:1200px) {
+.three_img_sec_3{
+    margin-top: 43px;
+}    
+}
+
+
+@media (min-width:1200px) {
+
+
+.last_sec_text_div{
+    margin-top: 200px;
+}    
+}
+
+
+
+
+
+/* hoarding page  */
+
+@media (min-width:992px) {
+
+.hoverng_btn_margin{
+    margin-top:50px;
+}    
+}
+
+
+
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+
+
