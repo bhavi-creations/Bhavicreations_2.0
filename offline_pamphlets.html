@@ -107,24 +107,28 @@
             width: 100%;
         }
 
-        button {
-            background-color: #fff;
+        .act_btn {
+            background-color: #000000;
             border: none;
-            color: #aaa;
+            /* color: #925f5f; */
             cursor: pointer;
             font-size: 16px;
             padding: 15px;
         }
 
-        button:hover {
+        .act_btn:hover {
             color: #222;
         }
 
-        button:focus {
+        .act_btn:focus {
             outline: none;
         }
 
-        .slider-container .action-buttons button {
+        .act_btn i {
+            color: white;
+        }
+
+        .slider-container .action-buttons .act_btn {
             position: absolute;
             left: 35%;
             top: 50%;
@@ -135,6 +139,7 @@
             transform: translateX(-100%);
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
+            color: black;
         }
 
         .slider-container .action-buttons .up-button {
@@ -206,17 +211,6 @@
             color: #777;
             line-height: 1.4;
         }
-
-
-
-        /* .down-button .icon_pham{
-            background-color: black;
-            color: white;
-        }
-
-        .up-button {
-            background-color: black;
-        } */
     </style>
 
 </head>
@@ -227,11 +221,11 @@
         <div class="container nav_main p-3">
             <div class="d-flex justify-content-between align-items-center">
 
-                <a href="index.html"> <img src="assests/images/bhavi/foot_bhavi_logo.png"
-                        class="img-fluid   " style="width: 150px;height: 65px;" alt=""></a>
+                <a href="index.html"> <img src="assests/images/bhavi/foot_bhavi_logo.png" class="img-fluid   "
+                        style="width: 150px;height: 65px;" alt=""></a>
 
 
-              
+
 
 
 
@@ -295,42 +289,48 @@
                 </div>
             </div>
             <div class="action-buttons">
-                <button class="down-button">
-                    <i class="icon_pham fas fa-arrow-down"></i>
+                <button class="down-button act_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                    </svg>
                 </button>
-                <button class="up-button">
-                    <i class="bi bi-arrow-up-square custom_icon"></i>
+                <button class="up-button act_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+                    </svg>
                 </button>
             </div>
         </div>
     </section>
 
 
-    <!-- second section -->
-
-    <section>
-        <div class="container mt-2">
+    <section class="mt-5">
+        <div class="container">
             <div class="row" style="justify-content: space-evenly;">
-                <div class="col-lg-5 col-md-12" style="justify-content: space-evenly; margin-top: 90px;">
+                <div class="col-lg-5 order-1 order-sm-1 order-lg-1 mt-4">
                     <div class="col-lg-12 order-sm-1 d-flex flex-column justify-content-center card">
-                        <h2 class="mt-5 text-center">Informational</h2>
+                        <h2 class="mt-5 text-center">Informational 1</h2>
 
                         <p class="text-center m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
                             fuga at aliquid ducimus
                             obcaecati! Ipsum harum in hic quam beatae veritatis laudantium consequatur a excepturi
                             quaerat, similique sequi, iste pariatur!</p>
-                    </div>
-                    <div class="col-lg-12 mt-5 d-flex flex-row justify-content-center">
-                        <img src="assests/images/bhavi/phamplet.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-12 " style="justify-content: space-evenly; ">
-                    <div class="col-lg-12 order-md-2 mt-4 d-flex flex-row justify-content-center">
-                        <img src="assests/images/bhavi/phamplet2.png" alt="" class="img-fluid">
-                    </div>
+                <div class="col-lg-5 order-2 mt-4 order-sm-2 order-lg-2" style="justify-content: center;">
+                    <img src="assests/images/bhavi/phamplet2.png" alt="" class="img-fluid text-center">
+                </div>
+                <div class="col-lg-5 order-4 mt-4 order-sm-4 order-lg-3">
+                    <img src="assests/images/bhavi/phamplet.png" alt="" class="img-fluid text-center">
+                </div>
+                <div class="col-lg-5 mt-4 order-3 order-sm-3 order-lg-4">
                     <div class="col-lg-12 col-md-12 order-md-1 mt-5 card d-flex flex-column justify-content-center">
 
-                        <h2 class="mt-5 text-center">Informational</h2>
+                        <h2 class="mt-5 text-center">Informational 2</h2>
 
                         <p class="text-center m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
                             fuga at aliquid ducimus
@@ -338,7 +338,6 @@
                             quaerat, similique sequi, iste pariatur!</p>
 
                     </div>
-
                 </div>
             </div>
         </div>
@@ -389,7 +388,7 @@
                             nostrud exercitation ullamco.</p>
                     </div>
                 </div>
-                
+
 
             </div>
         </div>
@@ -473,7 +472,7 @@
             </div>
         </div>
     </section>
-        <!-- <section class="mt-4">
+    <!-- <section class="mt-4">
             <div class="col-12">
                 <h1 style="font-family:cursive;" class="ms-5">
                     Our Products
@@ -493,7 +492,7 @@
         <div class="container " style="padding-top: 100px;">
             <div class="row">
 
-                <div class="   col-md-4 text-center order-2 order-md-1"  >
+                <div class="   col-md-4 text-center order-2 order-md-1">
 
                     <p style="color: #6a6b6b;font-weight:bold;font-size:24px;  ">Kakinada</p>
                     <p style="color: #000;">Behind J.N.T.U Engineering College Play Ground,
@@ -526,8 +525,8 @@
 
 
                 <div class="  col-md-4  order-1 order-md-2" style="text-align: center; ">
-                    <a href="index.html"><img src="assests/images/bhavi/foot_bhavi_logo.png"  style="width: 150px;height: 65px;" alt=""
-                            class="img-fluid  " />
+                    <a href="index.html"><img src="assests/images/bhavi/foot_bhavi_logo.png"
+                            style="width: 150px;height: 65px;" alt="" class="img-fluid  " />
                     </a>
 
 
@@ -536,12 +535,12 @@
                     <h5 style="color: #252525; font-weight: 1000; margin-top: 30px; ">
                         <span style="color:#92989F; font-weight: bold;">
                             <i class="fa-solid fa-phone"></i>
-                        </span>: +91 9642343434   
+                        </span>: +91 9642343434
                     </h5>
 
 
-                   <a href="mailto:admin@bhavicreations.com" style="text-decoration: none; ">
-                        <div class="d-flex mail_text_box" style="margin-top: 30px;" >
+                    <a href="mailto:admin@bhavicreations.com" style="text-decoration: none; ">
+                        <div class="d-flex mail_text_box" style="margin-top: 30px;">
                             <span class="tooltip-container  ">
 
                                 <span class="text">@</span>
@@ -550,16 +549,17 @@
                             <p style="color: #252525; font-weight: bold;  "> admin@bhavicreations.com </p>
 
                         </div>
-                    </a> 
+                    </a>
 
 
- 
+
                 </div>
 
-                <div class="    col-md-4 text-center order-3  order-md-3" >
+                <div class="    col-md-4 text-center order-3  order-md-3">
 
                     <p style="color: #6a6b6b;font-weight:bold;font-size:24px;  ">Rajahmundry</p>
-                    <p style="color: #000;">  Dheemahi Bhavan, spencer back side, near Ladies Club, Prakasam Nagar, Rajamahendravaram, Andhra Pradesh 533103</p>
+                    <p style="color: #000;"> Dheemahi Bhavan, spencer back side, near Ladies Club, Prakasam Nagar,
+                        Rajamahendravaram, Andhra Pradesh 533103</p>
 
 
                     <div class="mt-4">
@@ -596,7 +596,7 @@
 
         <section>
 
-            <div class="container" >
+            <div class="container">
                 <hr style="border: none; height: 2px; background-color: rgb(76, 76, 76); margin-top: 55px;">
             </div>
 
