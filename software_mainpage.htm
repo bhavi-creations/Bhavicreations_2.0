@@ -44,157 +44,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-    * {
-      font-family: 'Inter', sans-serif;
-      /* background-color:#f8f8f8    */
-    }
 
- 
- 
-
-    /* header and navbar start */
-
-
-
-
-
-    .sec1-para {
-      font-family: Poppins;
-      /* font-size: 18px; */
-      /* font-weight: 500; */
-      line-height: 31px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #ffffff;
-    }
-
-    .sec1-viewmore {
-      font-family: Poppins;
-      font-size: 15px;
-      font-weight: 600;
-      line-height: 20px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #fefefe;
-      background-blend-mode: screen;
-      background: #085093CC;
-      background: linear-gradient(180deg, #3598F3 0%, #0A58A0 100%);
-      border: 3.66px solid #82add8cc;
-      padding: 10px;
-      border-radius: 25px;
-    }
-
-
-
-
-
-
-
-
-
-
-    .dropdown-menu {
-      /* opacity: 0.1;  */
-      background: transparent !important;
-      /* border-radius: 20px; */
-
-    }
-
-    .menu_border {
-      border-color: rgb(189, 188, 188) !important;
-      border-width: 2px !important;
-      border-radius: 20px !important;
-      backdrop-filter: blur(8px);
-      /* Adjust the blur intensity as per your preference */
-      background-color: rgba(255, 255, 255, 0.5);
-      padding-right: 50px !important;
-      padding-left: 20px !important;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-
-    }
-
-    .menu_item {
-      font-weight: bold !important;
-      color: #ffffff !important;
-      line-height: 55px !important;
-
-
-
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-
-
-    }
-
-    .menu_item:hover {
-      background-color: transparent !important;
-
-    }
-
-    .dropdown-menu .menu_item {
-      border-bottom: 3px dashed #d7d7d751 !important;
-      /* Adjust the color and style of the border as per your preference */
-      width: 180px;
-
-    }
-
-    .dropdown-menu .lol:last-child {
-      border-bottom: none !important;
-    }
-
-
-
-    .card1 {
-      background-color: #ffffff;
-      height: auto;
-      width: auto;
-      border-radius: 12px;
-
-
-    }
-
-    .card2 {
-      background-color: #ffffff;
-      height: auto;
-      width: auto;
-      border-radius: 12px;
-    }
-
-    .card3 {
-      background-color: #ffffff;
-      height: auto;
-      width: auto;
-      border-radius: 12px;
-    }
-
-    .card_heading {
-      font-weight: bold;
-      color: #0d4b6c;
-
-    }
-
-    @media(min-width:375px) and (max-width:576px) {
-      .card1 {
-        height: 100% !important;
-        width: 100% !important;
-      }
-    }
-
-    @media(min-width:375px) and (max-width:576px) {
-      .card2 {
-        height: 100% !important;
-        width: 100% !important;
-      }
-    }
-
-    @media(min-width:375px) and (max-width:576px) {
-      .card3 {
-        height: 100% !important;
-        width: 100% !important;
-      }
-    }
 
     .sft_btn {
       padding: 1.3em 3em;
@@ -469,6 +319,70 @@
     .gear-inner .bar:nth-child(6) {
       transform: rotate(150deg);
     }
+
+
+
+    .card_sft {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .card_sft svg {
+      width: 48px;
+      fill: #333;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .card_sft:hover {
+      transform: rotate(-5deg) scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .card_sft:hover .card__content {
+      transform: translate(-50%, -50%) rotate(0deg);
+      opacity: 1;
+    }
+
+    .card__title {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .card__description {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    .card_sft:hover svg {
+      scale: 0;
+      transform: rotate(-45deg);
+    }
   </style>
 
 
@@ -481,80 +395,190 @@
   <!-- Navbar -->
   <section class="sticky_nav    shadow-lg">
     <div class="container nav_main p-3">
-        <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center">
 
-            <a href="index.html"> <img src="assests/images/bhavi/foot_bhavi_logo.png"
-                    class="img-fluid   " style="width: 150px;height: 65px;" alt=""></a>
-
-
-          
-
-
-
-            <label for="check1" class="menuButton text-center onlyfortab">
-                <input id="check1" type="checkbox" class="toggleDropdown">
-                <span class="top"></span>
-                <span class="mid"></span>
-                <span class="bot"></span>
-            </label>
+        <a href="index.html"> <img src="assests/images/bhavi/foot_bhavi_logo.png" class="img-fluid   "
+            style="width: 150px;height: 65px;" alt=""></a>
 
 
 
 
-            <ul class="dropdown-menu dropdown-menu-end menu_border">
-                <li><a class="dropdown-item menu_item_black" href="index.html">Home</a></li>
-                <li><a class="dropdown-item menu_item_black" href="about.html">About</a></li>
-                <li><a class="dropdown-item menu_item_black" href="services.html">Services</a></li>
-                <li><a class="dropdown-item menu_item_black  " href="Portfolio.html">Portfolio</a></li>
-                <li><a class="dropdown-item menu_item_black lol" href="contact_us.html">Contact Us</a></li>
-            </ul>
 
 
-        </div>
+        <label for="check1" class="menuButton text-center onlyfortab">
+          <input id="check1" type="checkbox" class="toggleDropdown">
+          <span class="top"></span>
+          <span class="mid"></span>
+          <span class="bot"></span>
+        </label>
+
+
+
+
+        <ul class="dropdown-menu dropdown-menu-end menu_border">
+          <li><a class="dropdown-item menu_item_black" href="index.html">Home</a></li>
+          <li><a class="dropdown-item menu_item_black" href="about.html">About</a></li>
+          <li><a class="dropdown-item menu_item_black" href="services.html">Services</a></li>
+          <li><a class="dropdown-item menu_item_black  " href="Portfolio.html">Portfolio</a></li>
+          <li><a class="dropdown-item menu_item_black lol" href="contact_us.html">Contact Us</a></li>
+        </ul>
+
+
+      </div>
     </div>
-</section>
+  </section>
 
   <!-- 1st section -->
 
-  <section style="background: linear-gradient(to right,#335fd8,white );">
-
-    <div class="row">
-      <div class="col-lg-6 text-center d-flex flex-column justify-content-center" style="color: white;">
-        <h1><b>Customized Softwares</b></h1>
-        <h5 class="mt-2">we create customized softwares</h5>
-        <div>
-          <button class="sft_btn mt-2"> contact-us
-          </button>
+  <section style="background: linear-gradient(to right,#f6f6ff,white );">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 text-center d-flex flex-column justify-content-center">
+          <h1 style="color: rgb(62, 95, 206);  font-family: Verdana, Geneva, Tahoma, sans-serif;"><b>Customized
+              Softwares</b></h1>
+          <h5 class="mt-2">we create customized softwares</h5>
+          <div>
+            <button class="sft_btn mt-2"> contact-us
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <img src="assests/images/bhavi/dev_3.gif" alt="" class="img-fluid mt-4">
+          <!-- <video src="assests/images/bhavi/dev_3.gif" autoplay loop></video> -->
         </div>
 
       </div>
-      <div class="col-lg-6">
-        <img src="assests/images/bhavi/sofware bg.png" alt="" class="img-fluid">
-      </div>
-
     </div>
-
-
-
   </section>
 
-  <!-- <section >
-
-
-    <h2><b>Customized Softwares</b></h2>
-    <h5 class="mt-2">we create customized softwares</h5>
-      <img src="assests/images/bhavi/software bg.png" alt="" class="img-fluid">
-
-  </section> -->
-
-
-  <section class="mt-4">
+  <section>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <img src="assests/images/bhavi/software 3.png" alt="" class="img-fluid">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <img src="assests/images/bhavi/dev_2.gif" alt="" class="img-fluid">
         </div>
-        <div class="col-lg-6 text-center d-flex flex-column justify-content-center">
+        <div class="col-lg-6 d-flex flex-column justify-content-center text-center order-1 order-lg-2">
+          <h2>Heading</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsam commodi neque tempore? Accusantium
+            at dolore voluptatum expedita beatae, dolores dolorem blanditiis perferendis tenetur architecto. Consequatur
+            repellendus explicabo cumque dignissimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+
+
+
+
+        <div class="col-lg-6 row mt-5 mb-5 text-center">
+
+
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="card_sft img-fluid">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+                </path>
+              </svg>
+              <div class="card__content">
+                <p class="card__title">Card Title
+                </p>
+                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="card_sft img-fluid">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+                </path>
+              </svg>
+              <div class="card__content">
+                <p class="card__title">Card Title
+                </p>
+                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-6 col-md-6 mb-4">
+           <div class="card_sft img-fluid">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+                </path>
+              </svg>
+              <div class="card__content">
+                <p class="card__title">Card Title
+                </p>
+                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-6  col-md-6 mb-4">
+            <div class="card_sft img-fluid">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+                </path>
+              </svg>
+              <div class="card__content">
+                <p class="card__title">Card Title
+                </p>
+                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            quidem officia similique cupiditate praesentium aperiam, culpa ad. Nulla sed culpa, molestiae sequi iusto
+            temporibus tempora molestias eius perspiciatis, fuga delectus voluptas vero repellat voluptatum quam at
+            quasi doloremque consectetur enim. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            veniam iusto, quod culpa doloribus, in repellat libero quisquam est ducimus similique ullam facere modi!
+            Soluta dolor iste nisi odio? Molestiae quisquam itaque recusandae. Beatae obcaecati perspiciatis
+            exercitationem rem illum? Amet illum enim velit. Obcaecati autem veniam labore ullam expedita veritatis.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-4 ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <img src="assests/images/bhavi/dev_4.gif" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6 text-center d-flex flex-column justify-content-center order-1 order-lg-2">
           <h2 style="color: #0d4b6c;">introducing </h2>
           <h1 class="sft_head">Bhavi Creations</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed consectetur facere necessitatibus suscipit
@@ -566,7 +590,7 @@
   </section>
 
 
-  <section  style="background-color: #232424; color: white;"> 
+  <section style="background-color: #232424; color: white;">
     <div class="container">
       <div class="row ">
         <div class="col-lg-6 col-md-12 col-sm-12  d-flex flex-column justify-content-center text-center">
@@ -662,39 +686,39 @@
       </div>
       <div class="row my-4">
         <!-- <div class=" "> -->
-          <div class="gearbox col-lg-6 col-md-12 col-sm-12 d-flex flex-row justify-content-center">
-            <div class="overlay"></div>
-            <div class="gear one">
-              <div class="gear-inner">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
+        <div class="gearbox col-lg-6 col-md-12 col-sm-12 d-flex flex-row justify-content-center">
+          <div class="overlay"></div>
+          <div class="gear one">
+            <div class="gear-inner">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
             </div>
-            <div class="gear two">
-              <div class="gear-inner">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
+          </div>
+          <div class="gear two">
+            <div class="gear-inner">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
             </div>
-            <div class="gear three">
-              <div class="gear-inner">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
+          </div>
+          <div class="gear three">
+            <div class="gear-inner">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
             </div>
-            <div class="gear four large">
-              <div class="gear-inner">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
+          </div>
+          <div class="gear four large">
+            <div class="gear-inner">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
             </div>
+          </div>
           <!-- </div> -->
 
         </div>
@@ -710,338 +734,9 @@
     </div>
   </section>
 
-  <!-- MAIN SECTION -->
-  <!-- <section  style="background-image: url('assests/images/bhavi/main_image.png'); background-position: center; background-repeat: no-repeat;"   class="p-5"> 
-      <div class="container mt-5 mb-5">
-        <div class="row">
-          <div class="col-6 mt-5">
 
-            <h1 style="font-size: 60px;  color: red; font-weight: 900;">Custiomized <br> Softwares </h1>
-             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique asperiores assumenda ad ab cum laborum tenetur, nostrum unde omnis harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam reiciendis facilis laudantium officia laborum aperiam nam vero voluptates nihil reprehenderit!</p>
-   
-          </div>
-          <div class="col-6 mt-5">
-          
 
 
-       
-
-              <video controls autoplay class="img-fluid">
-                <source src="assests/images/Untitled design (1).mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              
-              
-
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-  <!-- MAIN SECTION -->
-
-
-  <!-- Our Partners -->
-  <!-- <section class="mb-5 pb-5">
-      <div class="container mb-5">
-        <div class="row">
-          <div class="col-3">
-             <img src="assests/images/logo1.png" alt=""  class="img-fluid">
-          </div>
-          <div class="col-3">
-            <img src="assests/images/logo1.png" alt=""  class="img-fluid">
-          </div>
-          <div class="col-3">
-            <img src="assests/images/logo1.png" alt=""  class="img-fluid">
-          </div>
-          <div class="col-3">
-            <img src="assests/images/logo1.png" alt=""  class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section> -->
-  <!-- Our Partners -->
-
-
-
-  <!-- FIRST SECTION -->
-  <!-- <section   style="background-image: url('assests/images/Untitled\ design\ \(5\).png');">
-       <div class="container mt-5 mb-5">
-        <div class="row">
-          <div class="col-6 mt-5 pt-5">
-            <p style="text-align: justify;" class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem officia similique cupiditate praesentium aperiam, culpa ad. Nulla sed culpa, molestiae sequi iusto temporibus tempora molestias eius perspiciatis, fuga delectus voluptas vero repellat voluptatum quam at quasi doloremque consectetur enim. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae veniam iusto, quod culpa doloribus, in repellat libero quisquam est ducimus similique ullam facere modi! Soluta dolor iste nisi odio? Molestiae quisquam itaque recusandae. Beatae obcaecati perspiciatis exercitationem rem illum? Amet illum enim velit. Obcaecati autem veniam labore ullam expedita veritatis.</p>
-          </div>
-
-
-
-          <div class="col-6 row mt-5 mb-5">
-
-
-            <div class="col-6">
-              <div class="card  shadow mb-5"  >
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-6  ">
-              <div class="card shadow mb-5"  >
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-6  ">
-              <div class="card  shadow"  >
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-6  ">
-              <div class="card  shadow" >
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-       </div>
-     </section> -->
-  <!-- FIRST SECTION -->
-
-
-
-  <!-- SECOND SECTION -->
-  <div class="container mt-5 mb-5">
-    <div class="row">
-      <div class="col-6">
-        <img src="assests/images/bhavi/side_image.png" alt="" class="img-fluid">
-      </div>
-      <div class="col-6 mt-5">
-        <p style="text-align: justify;" class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Aspernatur, harum molestiae modi nobis laborum ipsa perferendis sequi odio magnam natus optio ex repellendus
-          aut similique sint? Quae mollitia consequatur et explicabo eum natus commodi tempora sed cumque omnis nisi
-          consectetur enim, labore tenetur? Quibusdam, fugiat ipsa nemo a suscipit sit. Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Amet et, inventore nihil neque mollitia provident odit sapiente beatae ea!
-          Doloribus commodi quidem, numquam exercitationem, animi veritatis incidunt quibusdam cumque cum esse illum
-          voluptatem. Dolor nam cupiditate eos, explicabo ab nostrum dolore consectetur sunt quibusdam dolorem ea, quod
-          repellat eum odio officia accusamus exercitationem atque libero totam suscipit. Nihil tempora hic, voluptatem
-          explicabo quam alias nesciunt officiis dolore molestias. Id excepturi nostrum suscipit error ipsum in
-          accusamus corrupti dolorum? Molestiae error ea enim! Maiores, id veritatis! Ratione nemo voluptatibus
-          molestias magnam.</p>
-
-      </div>
-    </div>
-  </div>
-
-
-  <!-- SECOND SECTION -->
-
-
-
-
-  <!-- SECOND SECTION -->
-  <section style="background-image: url('assests/images/bhavi/Background_image.png');  background-position: center;"
-    class="p-5">
-    <div class="container mt-5 mb-5">
-      <div class="row">
-
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dicta eius perspiciatis sunt nemo nihil non
-              in cumque illum maxime, qui minus expedita natus veniam totam sed ex consectetur. Amet ab rem possimus ea
-              placeat doloribus dignissimos consequatur provident alias quisquam libero, illo odit consequuntur omnis
-              atque minima, nihil, laudantium dolorum perspiciatis similique! Repellendus odio, et voluptas ullam error
-              laboriosam eligendi? Odio quidem id ullam earum eius magni assumenda aliquam pariatur, illum minus
-              consequuntur magnam vel distinctio libero blanditiis. Unde illo non alias, amet nam molestiae cum ullam
-              doloribus temporibus, veniam iste inventore saepe repellendus veritatis iusto possimus reiciendis est!
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas illum quisquam vitae sint omnis
-              officia veniam aliquam magni quia velit id inventore quidem autem molestias, vero delectus amet at
-              perspiciatis temporibus mollitia, ad distinctio? Ratione hic quae autem voluptatum iste, consequuntur nam
-              commodi nobis, non eos facere voluptates accusamus iusto possimus iure, vero dolore similique consequatur
-              dicta cumque modi voluptatibus explicabo rem. Quam ut aliquam corporis ipsam excepturi veniam animi cumque
-              quibusdam eaque placeat. Ipsa id, veniam vero veritatis beatae assumenda minima molestiae laboriosam
-              facilis exercitationem deserunt et nam explicabo voluptate maxime fuga dignissimos, quod rerum temporibus
-              hic! Pariatur?
-
-            </p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-
-
-  <!-- SECOND SECTION -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- THIRD  SECTION -->
-  <section>
-    <div class="container mt-5 mb-5">
-      <div class="row">
-
-
-
-
-        <div class="col-6 row mt-5 mb-5">
-
-
-          <div class="col-6">
-            <div class="card  shadow mb-5">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-6  ">
-            <div class="card shadow mb-5">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-6  ">
-            <div class="card  shadow">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-6  ">
-            <div class="card  shadow">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="col-6 mt-5 pt-5">
-          <p style="text-align: justify;" class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            quidem officia similique cupiditate praesentium aperiam, culpa ad. Nulla sed culpa, molestiae sequi iusto
-            temporibus tempora molestias eius perspiciatis, fuga delectus voluptas vero repellat voluptatum quam at
-            quasi doloremque consectetur enim. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            veniam iusto, quod culpa doloribus, in repellat libero quisquam est ducimus similique ullam facere modi!
-            Soluta dolor iste nisi odio? Molestiae quisquam itaque recusandae. Beatae obcaecati perspiciatis
-            exercitationem rem illum? Amet illum enim velit. Obcaecati autem veniam labore ullam expedita veritatis.</p>
-        </div>
-
-
-
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- THIRD  SECTION -->
-
-
-
-
-  <!-- FOURTH SECTION -->
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <h1 class="text-center">We offered </h1>
-        <div class="col-2">
-          <img src="assests/images/bhavi/Untitled design (33).png" alt="" class="img-fluid">
-        </div>
-        <div class="col-2">
-          <img src="assests/images/bhavi/Untitled design (34).png" alt="" class="img-fluid">
-
-        </div>
-        <div class="col-2">
-          <img src="assests/images/bhavi/Untitled design (35).png" alt="" class="img-fluid">
-
-        </div>
-        <div class="col-2">
-          <img src="assests/images/bhavi/Untitled design (36).png" alt="" class="img-fluid">
-        </div>
-
-        <div class="col-2">
-          <img src="assests/images/bhavi/Untitled design (37).png" alt="" class="img-fluid">
-        </div>
-
-        <div class="col-2">
-          <img src="assests/images/bhavi/Untitled design (33).png" alt="" class="img-fluid">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FOURTH SECTION -->
 
 
 
@@ -1050,105 +745,94 @@
 
 
   <!-- FOOTER -->
-  <footer class="text-light    mt-5 foot " style="background: linear-gradient(to bottom, #e7e7e7, #ffffff);   ">
+  <footer class="text-light foot " style="background: linear-gradient(to bottom, #e7e7e7, #ffffff);   ">
     <div class="container " style="padding-top: 100px;">
-        <div class="row">
+      <div class="row">
 
-            <div class="   col-md-4 text-center order-2 order-md-1"  >
+        <div class="   col-md-4 text-center order-2 order-md-1">
 
-                <p style="color: #6a6b6b;font-weight:bold;font-size:24px;  ">Kakinada</p>
-                <p style="color: #000;">Behind J.N.T.U Engineering College Play Ground,
-                    Ranga Rao Nagar, Kakinada, Andhra Pradesh 533003</p>
-
-
-                <div class="mt-4  " style="margin-bottom: 55px;">
-                    <a href="https://www.facebook.com/BhavicreationsPvtLtd/ " target="_blank"> <i
-                            style="font-size: 24px; color: #0000ff; "
-                            class="fa-brands fa-facebook px-1  footicon"></i></a>
-                    <a href="https://www.instagram.com/bhavicreations_pvtltd/ " target="_blank"> <i
-                            style="font-size: 24px; color: #ec1475;"
-                            class="fa-brands fa-instagram  px-1 footicon"></i></a>
-                    <a href="https://twitter.com/bhavi_creations" target="_blank"> <i
-                            style="font-size: 24px; color: #000;"
-                            class="fa-brands  px-1  fa-square-x-twitter"></i></a>
-                    <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i
-                            style="font-size: 24px; color: #FF0000;"
-                            class="fa-brands fa-youtube  px-1  footicon"></i></a>
-                    <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i
-                            style="font-size: 24px;  color: #0077B5;  "
-                            class="fa-brands fa-linkedin   px-1 footicon"></i></a>
-                    <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i
-                            style="font-size: 24px ; color: #E60023;"
-                            class="fa-brands fa-pinterest px-1  footicon"></i></a>
+          <p style="color: #6a6b6b;font-weight:bold;font-size:24px;  ">Kakinada</p>
+          <p style="color: #000;">Behind J.N.T.U Engineering College Play Ground,
+            Ranga Rao Nagar, Kakinada, Andhra Pradesh 533003</p>
 
 
-                </div>
-            </div>
+          <div class="mt-4  " style="margin-bottom: 55px;">
+            <a href="https://www.facebook.com/BhavicreationsPvtLtd/ " target="_blank"> <i
+                style="font-size: 24px; color: #0000ff; " class="fa-brands fa-facebook px-1  footicon"></i></a>
+            <a href="https://www.instagram.com/bhavicreations_pvtltd/ " target="_blank"> <i
+                style="font-size: 24px; color: #ec1475;" class="fa-brands fa-instagram  px-1 footicon"></i></a>
+            <a href="https://twitter.com/bhavi_creations" target="_blank"> <i style="font-size: 24px; color: #000;"
+                class="fa-brands  px-1  fa-square-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i
+                style="font-size: 24px; color: #FF0000;" class="fa-brands fa-youtube  px-1  footicon"></i></a>
+            <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i
+                style="font-size: 24px;  color: #0077B5;  " class="fa-brands fa-linkedin   px-1 footicon"></i></a>
+            <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i
+                style="font-size: 24px ; color: #E60023;" class="fa-brands fa-pinterest px-1  footicon"></i></a>
 
 
-            <div class="  col-md-4  order-1 order-md-2" style="text-align: center; ">
-                <a href="index.html"><img src="assests/images/bhavi/foot_bhavi_logo.png"  style="width: 150px;height: 65px;" alt=""
-                        class="img-fluid  " />
-                </a>
+          </div>
+        </div>
+
+
+        <div class="  col-md-4  order-1 order-md-2" style="text-align: center; ">
+          <a href="index.html"><img src="assests/images/bhavi/foot_bhavi_logo.png" style="width: 150px;height: 65px;"
+              alt="" class="img-fluid  " />
+          </a>
 
 
 
 
-                <h5 style="color: #252525; font-weight: 1000; margin-top: 30px; ">
-                    <span style="color:#92989F; font-weight: bold;">
-                        <i class="fa-solid fa-phone"></i>
-                    </span>: +91 9642343434   
-                </h5>
+          <h5 style="color: #252525; font-weight: 1000; margin-top: 30px; ">
+            <span style="color:#92989F; font-weight: bold;">
+              <i class="fa-solid fa-phone"></i>
+            </span>: +91 9642343434
+          </h5>
 
 
-               <a href="mailto:admin@bhavicreations.com" style="text-decoration: none; ">
-                    <div class="d-flex mail_text_box" style="margin-top: 30px;" >
-                        <span class="tooltip-container  ">
+          <a href="mailto:admin@bhavicreations.com" style="text-decoration: none; ">
+            <div class="d-flex mail_text_box" style="margin-top: 30px;">
+              <span class="tooltip-container  ">
 
-                            <span class="text">@</span>
-                        </span> &nbsp;
+                <span class="text">@</span>
+              </span> &nbsp;
 
-                        <p style="color: #252525; font-weight: bold;  "> admin@bhavicreations.com </p>
-
-                    </div>
-                </a> 
-
-
+              <p style="color: #252525; font-weight: bold;  "> admin@bhavicreations.com </p>
 
             </div>
+          </a>
 
-            <div class="    col-md-4 text-center order-3  order-md-3" >
-
-                <p style="color: #6a6b6b;font-weight:bold;font-size:24px;  ">Rajahmundry</p>
-                <p style="color: #000;">  Dheemahi Bhavan, spencer back side, near Ladies Club, Prakasam Nagar, Rajamahendravaram, Andhra Pradesh 533103</p>
-
-
-                <div class="mt-4">
-                    <a href="https://www.facebook.com/Bhavicreations.rajahmundry" target="_blank"> <i
-                            style="font-size: 24px; color: #0000ff; "
-                            class="fa-brands fa-facebook px-1  footicon"></i></a>
-                    <a href="https://www.instagram.com/bhavicreationspvt_ltd.rjy/" target="_blank"> <i
-                            style="font-size: 24px; color: #ec1475;"
-                            class="fa-brands fa-instagram  px-1 footicon"></i></a>
-                    <a href="https://twitter.com/bhavi_creations" target="_blank"> <i
-                            style="font-size: 24px; color: #000;"
-                            class="fa-brands  px-1  fa-square-x-twitter"></i></a>
-                    <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i
-                            style="font-size: 24px; color: #FF0000;"
-                            class="fa-brands fa-youtube  px-1  footicon"></i></a>
-                    <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i
-                            style="font-size: 24px;  color: #0077B5;  "
-                            class="fa-brands fa-linkedin   px-1 footicon"></i></a>
-                    <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i
-                            style="font-size: 24px ; color: #E60023;"
-                            class="fa-brands fa-pinterest px-1  footicon"></i></a>
-
-
-                </div>
-            </div>
 
 
         </div>
+
+        <div class="    col-md-4 text-center order-3  order-md-3">
+
+          <p style="color: #6a6b6b;font-weight:bold;font-size:24px;  ">Rajahmundry</p>
+          <p style="color: #000;"> Dheemahi Bhavan, spencer back side, near Ladies Club, Prakasam Nagar,
+            Rajamahendravaram, Andhra Pradesh 533103</p>
+
+
+          <div class="mt-4">
+            <a href="https://www.facebook.com/Bhavicreations.rajahmundry" target="_blank"> <i
+                style="font-size: 24px; color: #0000ff; " class="fa-brands fa-facebook px-1  footicon"></i></a>
+            <a href="https://www.instagram.com/bhavicreationspvt_ltd.rjy/" target="_blank"> <i
+                style="font-size: 24px; color: #ec1475;" class="fa-brands fa-instagram  px-1 footicon"></i></a>
+            <a href="https://twitter.com/bhavi_creations" target="_blank"> <i style="font-size: 24px; color: #000;"
+                class="fa-brands  px-1  fa-square-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@bhavicreationspvtltd" target="_blank"> <i
+                style="font-size: 24px; color: #FF0000;" class="fa-brands fa-youtube  px-1  footicon"></i></a>
+            <a href="https://www.linkedin.com/in/bhavi-creations-pvt-ltd-926651235/" target="_blank"> <i
+                style="font-size: 24px;  color: #0077B5;  " class="fa-brands fa-linkedin   px-1 footicon"></i></a>
+            <a href="https://in.pinterest.com/bhavicreations/" target="_blank"> <i
+                style="font-size: 24px ; color: #E60023;" class="fa-brands fa-pinterest px-1  footicon"></i></a>
+
+
+          </div>
+        </div>
+
+
+      </div>
     </div>
 
 
@@ -1157,28 +841,28 @@
 
     <section>
 
-        <div class="container" >
-            <hr style="border: none; height: 2px; background-color: rgb(76, 76, 76); margin-top: 55px;">
-        </div>
+      <div class="container">
+        <hr style="border: none; height: 2px; background-color: rgb(76, 76, 76); margin-top: 55px;">
+      </div>
 
     </section>
 
     <div class="footer-area-bottom theme-bg text-center">
-        <div class="container" style="margin-top: 30px; margin-bottom: 30px;">
-            <div class="row">
-                <div class=" col-12">
-                    <div class="footer-widget__copyright">
-                        <span style="color:#989898;font-weight: 400;"> Design with love © Bhavi Creations 2024. All
-                            Rights Reserved </span>
-                    </div>
-                </div>
-
+      <div class="container" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="row">
+          <div class=" col-12">
+            <div class="footer-widget__copyright">
+              <span style="color:#989898;font-weight: 400;"> Design with love © Bhavi Creations 2024. All
+                Rights Reserved </span>
             </div>
+          </div>
+
         </div>
+      </div>
     </div>
 
 
-</footer>
+  </footer>
   <!-- ENDING  FOOTER -->
 
 
