@@ -120,4 +120,12 @@
 
 
 
+/* traditional pamplates  */
 
+
+@media (max-width:992px) {
+    
+    .only_for_sm_md{
+    margin-top: -50px !important;       
+    }
+}
