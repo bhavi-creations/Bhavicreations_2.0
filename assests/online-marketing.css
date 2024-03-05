@@ -1,3 +1,15 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    /* background-color:#f8f8f8    */
+ }
+
+
+
 /* animation navbar  */
 .menuButton {
     display: flex;
@@ -993,3 +1005,70 @@
     transform: translateY(0);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* social media page css  */
+
+@media(min-width:768px) and (max-width:992px) {
+  .soc-card2 {
+    margin-left:150px;
+    margin-top:-30px;
+  }
+  .soc-card1 {
+    margin-right:150px;
+    margin-top:-30px;
+  }
+  .soc-card3 {
+    margin-right:150px;
+    margin-top:-130px;
+  }
+}
+
+@media(max-width:768px) {
+  .soc-card2 {
+    margin-top:-30px;
+  }
+  .soc-card1 {
+    margin-top:-30px;
+  }
+  .soc-card3 {
+    margin-top:-130px;
+  }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+  .soc-title4 {
+    margin-top:20px;
+  }
+  .soc-title5 {
+    margin-top:20px;
+  }
+  .soc-title6 {
+    margin-top:20px;
+  }
+}
+@media(min-width:992px) and (max-width:1600px) {
+  .soc-title4 {
+    margin-top:20px;
+    
+  }
+  .soc-title5 {
+    margin-top:20px;
+  }
+  .soc-title6 {
+    margin-top:20px;
+  }
+}
+
+
+
+  
