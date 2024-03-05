@@ -244,7 +244,8 @@
 
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7  bird_div" >
-                <img src="./assests/images/bhavi/bird.gif" class="img-fluid   "    />
+                <img src="./assests/images/bhavi/bird.gif" class="img-fluid   gif"   alt="Your GIF"  id="gif"  />
+                <audio src="assests/images/bhavi/bird sound.mp3" class="sound" id="sound"></audio>
             </div>
             
 
@@ -553,7 +554,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>
 
+  <script>
+    const gif = document.getElementById('gif');
+    const sound = document.getElementById('sound');
 
+    gif.addEventListener('mouseenter', () => {
+        sound.play();
+    });
+
+    gif.addEventListener('mouseleave', () => {
+        sound.pause();
+        sound.currentTime = 0; // Resets the audio to the beginning
+    });
+</script>
 
  
   </body>

@@ -33,7 +33,9 @@
    }
 
 }
- 
+.sound {
+  display: none; /* Hide the audio element initially */
+}
  
 
 /* WhatsApp Logo */
