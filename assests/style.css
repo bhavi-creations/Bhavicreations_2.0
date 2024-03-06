@@ -116,17 +116,23 @@ padding-left: 20px !important;
 -webkit-font-smoothing: antialiased; 
 -moz-osx-font-smoothing: grayscale;  
 
+ 
 
+ top:  13% !important;
+ margin-left: 82% !important
+  
 
-
-
-
-
+}
+ 
+@media (min-width:992px) and (max-width:1200px) {
+  .menu_border{
  top:  15% !important;
  margin-left: 70% !important
   
 
 }
+}
+
 .menu_item{
     font-weight: bold !important;
     color: #ffffff !important;
@@ -684,7 +690,7 @@ height: 180px !important;
   .menu_border{
  
     top:  15% !important;
-    margin-left: 62% !important  
+    margin-left: 72% !important  
    
    }
 
