@@ -568,14 +568,14 @@ input[type]:checked ~ span.mid {
   overflow: hidden;
   transition-duration: 0.4s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to right, #3498db, #e74c3c);
+  background: linear-gradient(to right, #3498db, #e03c99,#1288ff,#de2b55);
 
 
 
 
 
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   left: 30px;
  
   cursor: pointer;
