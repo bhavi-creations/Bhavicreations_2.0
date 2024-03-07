@@ -641,8 +641,11 @@ input[type]:checked ~ span.mid {
 
 /* nav truck   */
 
-
-
+@media (max-width:768px) {
+  .traveller {
+    display: none !important;
+  }
+}
 
 .traveller {
   width: fit-content;
