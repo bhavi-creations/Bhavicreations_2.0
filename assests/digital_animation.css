@@ -113,3 +113,31 @@ main {
   
 
   /* ======================== */
+
+
+
+  main {
+    position: relative;
+}
+
+input[type="radio"] {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    left: calc(50% - 125px); /* Center horizontally */
+}
+
+input[type="radio"]:nth-of-type(2) {
+    left: calc(50% - 75px); /* Adjust position for the second radio button */
+}
+
+input[type="radio"]:nth-of-type(3) {
+    left: calc(50% - 25px); /* Adjust position for the third radio button */
+}
+
+input[type="radio"]:nth-of-type(4) {
+    left: calc(50% + 25px); /* Adjust position for the fourth radio button */
+}
+
+input[type="radio"]:nth-of-type(5) {
+    left: calc(50% + 75px); /* Adjust position for the fifth radio button */
+}
