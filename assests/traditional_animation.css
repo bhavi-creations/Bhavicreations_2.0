@@ -361,7 +361,7 @@
 }
 
 .card_trad:nth-child(1):before {
-  background-image: url('images/bhavi/himalaya.jpeg');
+  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
 
 .card_trad:nth-child(2):before {
@@ -369,7 +369,7 @@
 }
 
 .card_trad:nth-child(3):before {
-  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url('images/Bhavi_Creations/Traditional_Marketing_Sub-services_theater_ads_service_bhavi_creations.png');
 }
 
 .card_trad:nth-child(4):before {
