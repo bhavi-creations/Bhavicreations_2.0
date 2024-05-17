@@ -113,7 +113,7 @@
   border-radius: 20px !important;
   /* backdrop-filter: blur(8px); */
   /* Adjust the blur intensity as per your preference */
-  background-color: rgb(189, 188, 188) !important;
+  background-color: rgb(189, 188, 188)  ;
   padding-right: 50px !important;
   padding-left: 20px !important;
   -webkit-font-smoothing: antialiased;
