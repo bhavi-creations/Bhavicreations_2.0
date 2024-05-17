@@ -107,12 +107,12 @@
 
 }
 
-.menu_border {
+/* .menu_border {
   border-color: rgb(189, 188, 188) !important;
   border-width: 2px !important;
   border-radius: 20px !important;
-  /* backdrop-filter: blur(8px); */
-  /* Adjust the blur intensity as per your preference */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   background-color: rgb(189, 188, 188)  ;
   padding-right: 50px !important;
   padding-left: 20px !important;
@@ -121,14 +121,23 @@
 
   top: 13% !important;
   margin-left: 82% !important
-}
+} */
 
 
 .menu_border {
   
-  /* Adding the -webkit- prefix for better compatibility */
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  border-color: rgb(189, 188, 188) !important;
+  border-width: 2px !important;
+  border-radius: 20px !important;
+ 
+  background-color: rgba(31, 31, 31, 0.238)  !important;
+  padding-right: 50px !important;
+  padding-left: 20px !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  top: 13% !important;
+  margin-left: 82% !important
   
   
 }
