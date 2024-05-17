@@ -107,7 +107,9 @@
 
 }
 
-/* .menu_border {
+@media (min-width:768px) {
+  
+  .menu_border {
   border-color: rgb(189, 188, 188) !important;
   border-width: 2px !important;
   border-radius: 20px !important;
@@ -121,8 +123,11 @@
 
   top: 13% !important;
   margin-left: 82% !important
-} */
+}  
+}  
 
+@media (max-width:768px) {
+  
 
 .menu_border {
   
@@ -130,7 +135,7 @@
   border-width: 2px !important;
   border-radius: 20px !important;
  
-  background-color: rgba(31, 31, 31, 0.238)  !important;
+  background-color: rgba(31, 31, 31, 0.886)  !important;
   padding-right: 50px !important;
   padding-left: 20px !important;
   -webkit-font-smoothing: antialiased;
@@ -140,6 +145,7 @@
   margin-left: 82% !important
   
   
+}
 }
 
 @media (min-width:992px) and (max-width:1200px) {
