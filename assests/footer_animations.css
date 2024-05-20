@@ -994,6 +994,14 @@ Menu icon transofmation insperation by @Ali-Tahmazi99
     line-height: normal;
   }
 
+  .mix_up_text{
+    color: #032792 !important;
+    font-family: "Readex Pro";
+    font-size: 19px;
+    font-weight: bold;
+
+  }
+
   @media (min-width:1200px) {
 
     .only_for_pd_size {
