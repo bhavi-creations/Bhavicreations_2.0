@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phone = $_POST['phone'] ?? '';
     $email = $_POST['email'] ?? '';
     $message = $_POST['message'] ?? '';
+    $subject = $_POST['subject'] ?? '';
 
     // Create a new PHPMailer instance
     $mail = new PHPMailer(true);
@@ -21,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'rameshpilli1428@gmail.com'; // Your Gmail email address
-        $mail->Password = 'jjpksiywaevdyyrc';// Your Gmail password
+        $mail->Password = 'jjpksiywaevdyyrc'; // Your Gmail password
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
@@ -37,15 +38,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p><strong>Name:</strong> $name</p>
             <p><strong>Phone:</strong> $phone</p>
             <p><strong>Email:</strong> $email</p>
+            <p><strong>Subject:</strong> $subject</p>   
             <p><strong>Message:</strong><br>$message</p>
         ";
 
-        $mail->send();
-        echo 'Message has been sent';
-    } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
+   
+
+
+    $mail->send();
+    // Redirect to contact_us.html with a success flag
+    header('Location: contact_us.html?success=1');
+    exit;
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+
+
+
 } else {
     // If accessed directly without POST data
     echo 'Access Denied';
 }
+?>
