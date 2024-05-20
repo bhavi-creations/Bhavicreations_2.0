@@ -748,7 +748,7 @@ Menu icon transofmation insperation by @Ali-Tahmazi99
   }
 
   .Btn_back_buttn {
-    width: 150px;
+    width: 150px;  
     border-radius: 20px;
     background: linear-gradient(to right, #3498db, #e74c3c);
   }
