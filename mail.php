@@ -31,11 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Recipients
         $mail->setFrom('rameshpilli1428@gmail.com', 'mythri'); // Your Gmail email and name
-        $mail->addAddress('rameshpilli1428@gmail.com', 'mythri'); // Recipient's email and name
+         $mail->addAddress('rameshpilli1428@gmail.com', 'mythri'); // Recipient's email and name
 
         // Content
         $mail->isHTML(true);
-        $mail->Subject = 'New Message from Contact Form';
+        $mail->Subject = 'New Message from Contact Form  ';
         $mail->Body = "
             <h1>New Message</h1>
             <p><strong>First Name:</strong> $firstname</p>
