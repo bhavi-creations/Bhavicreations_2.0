@@ -69,6 +69,16 @@ if (!isset($_GET['code']) && !isset($_POST['provider'])) {
     <p>TenantID (only relevant for Azure): <input type="text" name="tenantId"></p>
     <input type="submit" value="Continue">
 </form>
+<script type="text/javascript">
+        window.omnisend = window.omnisend || [];
+        omnisend.push(["brandID", "6846e3dd25a66a4ceda01bf6"]);
+        omnisend.push(["track", "$pageViewed"]);
+        !function(){var e=document.createElement("script");
+        e.type="text/javascript",e.async=!0,
+        e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
+        var t=document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e,t)}();
+</script>
 </body>
 </html>
     <?php
